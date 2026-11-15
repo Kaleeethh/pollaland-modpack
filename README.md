@@ -18,7 +18,7 @@ Si sale una ventanita de "packwiz-installer", déjala trabajar: es la que descar
 
 ### Cambiar la memoria RAM
 
-El pack viene con **8 GB** (8192 MB). Para cambiarlo:
+El pack viene con **16 GB** (16384 MB). Para cambiarlo:
 clic derecho en la instancia → **Editar** → **Ajustes** → **Java** → marca **Memoria** → cambia **Asignación máxima de memoria**.
 
 - PC con 16 GB de RAM: deja 8192 MB.
