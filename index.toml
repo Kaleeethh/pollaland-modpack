@@ -4572,11 +4572,6 @@ hash = "5241f7a424288dfd704a44122aacae3affbdedc968e22a610dc52ba3b65cb7a8"
 metafile = true
 
 [[files]]
-file = "mods/tab.pw.toml"
-hash = "45e7540b2ad560a885fbd49eeedcb04d1a96f9058e753fed5bc9e33fc6184c3d"
-metafile = true
-
-[[files]]
 file = "mods/terrablender.pw.toml"
 hash = "aa62a45183101b53c5688a0e7ab6aa4520363804c96d7cae7dc50eaa6f295142"
 metafile = true
