@@ -1,0 +1,12 @@
+name = "MOA DECOR: GARDEN"
+filename = "MOAdecor GARDEN 1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/4733/298/MOAdecor%20GARDEN%201.20.1.jar"
+hash-format = "sha1"
+hash = "e1b8226e16fe5a6cc43643c7a56e976c9869e1e1"
+
+[update.curseforge]
+file-id = 4733298
+project-id = 908847

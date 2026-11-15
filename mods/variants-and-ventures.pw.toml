@@ -1,0 +1,12 @@
+name = "Variants&Ventures"
+filename = "variantsandventures-forge-1.0.29-mc1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9383/58/variantsandventures-forge-1.0.29-mc1.20.1.jar"
+hash-format = "sha1"
+hash = "e9893b8244c619423d92cff01c0e3e64294bae8d"
+
+[update.curseforge]
+file-id = 9383058
+project-id = 981139

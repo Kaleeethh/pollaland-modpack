@@ -1,0 +1,33 @@
+
+[hud]
+	#Mostrar la fecha en la pantalla
+	mostrar = true
+	#true = arriba al centro, debajo de las barras de arriba (la del tiempo de Pollatiempo, jefes…)
+	pegadoBarras = true
+	#Con pegadoBarras = true y Xaero's Minimap instalado: true = debajo del minimapa (y sus coordenadas), lo sigue si se mueve
+	pegadoMinimapa = true
+	#Posición libre (si pegadoBarras = false): 0 = borde izquierdo, 0.5 = centro, 1 = borde derecho
+	#Range: 0.0 ~ 1.0
+	x = 0.5
+	#Posición libre: 0 = arriba, 0.5 = centro, 1 = abajo
+	#Range: 0.0 ~ 1.0
+	y = 0.0
+	#Tamaño del texto
+	#Range: 0.5 ~ 2.0
+	escala = 0.75
+	fecha = true
+	#Mostrar el año ("de 2026") después de la fecha
+	anio = false
+	#Día de la semana
+	diaSemana = true
+	#Hora de Pollaland
+	hora = true
+	estacion = false
+	fondo = true
+	#Opacidad del fondo (0-100)
+	#Range: 0 ~ 100
+	opacidad = 40
+	#Color del texto: 0 crema, 1 blanco, 2 amarillo, 3 verde, 4 azul, 5 rojo, 6 morado, 7 gris
+	#Range: 0 ~ 7
+	color = 0
+

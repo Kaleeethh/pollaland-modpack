@@ -1,0 +1,8 @@
+name = "Thut Elevators"
+filename = "thuttech-1.20.1-9.3.3.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/thuttech-1.20.1-9.3.3.jar"
+hash-format = "sha256"
+hash = "88f58f00d15b33ad140ce2df2b03973cc1196ee88528427c7da08f83e13b80d7"

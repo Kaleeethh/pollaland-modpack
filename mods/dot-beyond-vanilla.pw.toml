@@ -1,0 +1,12 @@
+name = "Dawn of Time: Beyond Vanilla"
+filename = "dotbv-forge-1.20.1-0.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5elJ98Ne/versions/yo937GJJ/dotbv-forge-1.20.1-0.1.1.jar"
+hash-format = "sha512"
+hash = "48ceb7e8f44a7be16bc9dc329adb73533a3705b480a6b451c77299426d4f64830a02b65857730fe375c1220c949e672af1514430df6c932a26b1b4f40f0e48fa"
+
+[update.modrinth]
+mod-id = "5elJ98Ne"
+version = "yo937GJJ"

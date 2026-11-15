@@ -1,0 +1,12 @@
+name = "Epic Sustances Renewed"
+filename = "epicsustance-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8121/608/epicsustance-2.0.0.jar"
+hash-format = "sha1"
+hash = "61460b28de5399c58a91b143ad51404fbd6309a4"
+
+[update.curseforge]
+file-id = 8121608
+project-id = 1336280

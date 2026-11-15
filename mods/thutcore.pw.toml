@@ -1,0 +1,8 @@
+name = "Thut Core"
+filename = "thutcore-1.20.1-8.9.5-arreglado.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/thutcore-1.20.1-8.9.5-arreglado.jar"
+hash-format = "sha256"
+hash = "1447189fcda39ca820af6d72258b0abd56c8c80c5d3bd0b21fdc0bd2ae4e5cc8"

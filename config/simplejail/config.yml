@@ -1,0 +1,89 @@
+# SimpleJail (version Forge). Mismo config que el plugin: puedes copiar aqui tu config.yml del servidor.
+# Colores con & (ej. &a verde, &c rojo). %player%, %until% y %reason% se reemplazan.
+messages:
+    reload: '&aConfiguracion recargada!'
+    unjail-success: '&aJugador %player% liberado!'
+    unjail-fail: '&cNo se pudo liberar a %player%. Revisa el nombre.'
+    jail-success: '&a%player% encarcelado! Le quedan: %until%. Motivo: %reason%'
+    jail-fail: '&cNo se pudo encarcelar a %player%!'
+    setjail-success: '&aPunto de carcel guardado!'
+    setunjail-success: '&aPunto de salida de la carcel guardado!'
+    console-error: '&cSolo los jugadores pueden usar este comando!'
+    not-enough-arguments: '&cFaltan argumentos!'
+    too-many-arguments: '&cDemasiados argumentos!'
+    wrong-time-format: '&cEl tiempo no tiene un formato valido! Ejemplos: 30m, 2h, 1d12h, 1w'
+    you-have-been-jailed: '&cHas sido encarcelado! Le quedan: %until%. Motivo: %reason%'
+    still-jailed: '&cSigues en la carcel. Le quedan: %until%. Motivo: %reason%'
+    you-have-been-unjailed: '&aHas salido de la carcel!'
+    correct-usage-jail: '&cUso correcto: /jail <jugador> <tiempo> <motivo>'
+    correct-usage-unjail: '&cUso correcto: /unjail <jugador>'
+    correct-usage-setjail: '&cUso correcto: /setjail'
+    correct-usage-setunjail: '&cUso correcto: /setunjail'
+    checkjail-not-jailed: '&a%player% no esta en la carcel!'
+    checkjail-is-jailed: '&c%player% esta en la carcel! Le quedan: %until%. Motivo: %reason%'
+    jail-unjail-does-not-exist: '&cTodavia no existe el punto de carcel y/o de salida! Usa /setjail y /setunjail.'
+    cant-use-this-command: '&cNo puedes usar este comando estando en la carcel!'
+    no-permission: '&cNo tienes permiso para usar este comando.'
+    escape-attempt: '&cNo puedes salir de la carcel!'
+    already-jailed: '&c%player% ya esta en la carcel (le quedan %until%). Para cambiar la condena usa /sentencia.'
+    time-only-inside: '&7(Ojo: la condena solo corre mientras estes conectado y dentro de la carcel.)'
+    items-confiscated: '&7Te quitaron todo lo que llevabas (%count% cosas). Te lo devuelven cuando salgas.'
+    items-returned: '&aTe devolvieron tus cosas, parce.'
+    you-escaped: '&4&l¡Te volaste de la carcel! &cAhora eres PROFUGO: la condena no corre y la policia sabe mas o menos donde estas. Si vuelves por tu cuenta no pasa nada; si te atrapan, te suman tiempo.'
+    fugitive-escaped-alert: '&4&l⚠ ¡%player% se volo de la carcel! &7Visto cerca de &ex≈%x%, z≈%z% &7(%dim%). Atrapenlo y usen &f/jail %player%'
+    fugitive-alert: '&4&l⚠ PROFUGO: &f%player% &7— visto cerca de &ex≈%x%, z≈%z% &7(%dim%)'
+    fugitive-returned: '&a%player% volvio a la carcel por su cuenta. Se acabo la fuga.'
+    you-returned: '&aVolviste a la carcel. La condena vuelve a correr.'
+    caught: '&a%player% fue recapturado. Le sumaron %penalty% de condena (le quedan %until%).'
+    you-were-caught: '&cTe recapturaron. Te sumaron %penalty% de condena. Te quedan: %until%'
+    trial-no-room: '&cNo hay sala de juicios: un admin tiene que pararse en el banquillo y usar /settrial.'
+    trial-you-on-trial: '&6&l⚖ Estas en el banquillo de los acusados. &7No te puedes mover hasta que el juez de el veredicto.'
+    trial-rights-head: '&6&l━━ ⚖ Tus derechos ━━'
+commands:
+    filter: whitelist
+    filtered-list:
+    - tell
+    - msg
+    - w
+    - me
+    - help
+    - multas
+    - fines
+options:
+    uuid: false
+    jail-on-login: true
+    timeformat: dd.MM.yyyy HH:mm
+    keep-in-jail-radius: 12
+    roleplay-police-can-jail: true
+    op-level: 2
+    admins-bypass-commands: true
+    escape-mode: manhunt
+    safe-zone-radius: 24
+    safe-zone-region: ''
+    escape-penalty-percent: 50
+    escape-penalty-min-minutes: 5
+    fugitive-alert-seconds: 60
+    fugitive-location-rounding: 25
+    fugitive-glow-every-seconds: 60
+    fugitive-glow-duration-seconds: 5
+    confiscate-items: true
+    prison-uniform: true
+    uniform-items:
+    - kaleth_roleplay:preso_helmet
+    - kaleth_roleplay:preso_chestplate
+    - kaleth_roleplay:preso_leggings
+    - kaleth_roleplay:preso_boots
+    uniform-binding-curse: true
+    trial-rights-on-jail: true
+    trial-no-show-grace-minutes: 10
+    trial-no-show-sentence-minutes: 10
+    trial-allowed-commands:
+    - trial
+    - juicio
+    - tell
+    - msg
+    - w
+    - me
+    - help
+    - multas
+config-version: 3

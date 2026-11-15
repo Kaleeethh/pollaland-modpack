@@ -1,0 +1,16 @@
+# Cosas que nunca deben subirse
+*.log
+logs/
+crash-reports/
+saves/
+world/
+backups/
+screenshots/
+.connector/
+.mixin.out/
+mods/*.jar
+/packwiz-installer.jar
+/packwiz-installer-bootstrap.jar
+packwiz.json
+Thumbs.db
+.DS_Store

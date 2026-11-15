@@ -1,0 +1,12 @@
+name = "Whimsy Deco"
+filename = "whimsy_deco-1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EX0TBCxA/versions/kqQDAXze/whimsy_deco-1.2.jar"
+hash-format = "sha512"
+hash = "df9b707ed009f8bb997708ab14a1d0aa48a30d4138d643aa8b96444096e60a70d051175e50d70527196eaa5d886139fca2cb2d811234ebbc2435b3ec5b204471"
+
+[update.modrinth]
+mod-id = "EX0TBCxA"
+version = "kqQDAXze"

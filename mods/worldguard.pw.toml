@@ -1,0 +1,8 @@
+name = "WorldGuard (Forge)"
+filename = "worldguard-forge-1.20.1.jar"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/worldguard-forge-1.20.1.jar"
+hash-format = "sha256"
+hash = "31d472127eccfdc9e55fe546ba920cc98800b21249efebd78212b67bf1342f34"

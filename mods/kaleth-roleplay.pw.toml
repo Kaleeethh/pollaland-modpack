@@ -1,0 +1,8 @@
+name = "Kaleth Roleplay"
+filename = "kaleth_roleplay-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/kaleth_roleplay-1.20.1.jar"
+hash-format = "sha256"
+hash = "1e22afad7d47e2fa1d1642aa008535fff39e0dc099f1ea8853c9acb25680c322"

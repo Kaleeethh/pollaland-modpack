@@ -1,0 +1,16 @@
+{
+  "groups": [
+    {
+      "name": "default",
+      "worlds": [
+        "New World (1)",
+        "New World (1)_nether",
+        "New World (1)_the_end"
+      ],
+      "shares": [
+        "all"
+      ]
+    }
+  ],
+  "optionalShares": []
+}

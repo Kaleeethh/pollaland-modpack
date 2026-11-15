@@ -1,0 +1,16 @@
+#The default visibility distance for holograms.
+#Range: 1 ~ 1024
+visibility_distance = 20
+#The interval at which hologram visibility is updated in ticks.
+#Range: 1 ~ 1200
+update_visibility_interval = 20
+
+[saving]
+	#Whether autosave is enabled.
+	autosave_enabled = true
+	#The interval at which autosave is performed in minutes.
+	#Range: 1 ~ 1440
+	autosave_interval = 15
+	#Whether the holograms should be saved when they are changed.
+	save_on_changed = true
+

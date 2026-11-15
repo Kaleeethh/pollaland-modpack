@@ -1,0 +1,8 @@
+name = "Sabor Colombiano"
+filename = "saborcolombiano-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/saborcolombiano-1.20.1.jar"
+hash-format = "sha256"
+hash = "1b072619a78571a0606e83e6be029bab347bd247166c84dc8a44737069e9b07d"

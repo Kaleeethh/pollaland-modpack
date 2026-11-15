@@ -1,0 +1,8 @@
+name = "Pollaland Ciudad"
+filename = "pollaciudad-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/pollaciudad-1.20.1.jar"
+hash-format = "sha256"
+hash = "780f5883b9f26050983fbe2b4e0347f4016bea7afedfb34e7bd1bbb85f7fc6cd"

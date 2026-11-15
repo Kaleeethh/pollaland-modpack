@@ -1,0 +1,8 @@
+name = "Multiverse (Core + Portals + Inventories + SignPortals)"
+filename = "multiverse-forge-1.20.1-5.8.2.jar"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/multiverse-forge-1.20.1-5.8.2.jar"
+hash-format = "sha256"
+hash = "88f8638a6c3026d0f14ea5c97e1186da98fbde59b0c4461048a24dba9a1c772d"

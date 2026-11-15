@@ -1,0 +1,29 @@
+
+[general]
+	#Usar el sonido de grito al cortarse (si no, el de daño).
+	useScreamSound = false
+	#Silenciar el sonido al cortarse a uno mismo.
+	muteScream = false
+	#Usar los sonidos del mod (grito/daño) en vez de los de vanilla.
+	useCustomScream = true
+	#Tono del grito.
+	#Range: -10.0 ~ 10.0
+	screamPitch = 0.7
+	#Cantidad de partículas de sangre. 0 = sin sangre.
+	#Range: 0 ~ 100
+	bloodAmount = 36
+
+[wendigo]
+	#Si es true, el daño del Wendigo es un % de la vida máxima del objetivo.
+	wendigoGravity = false
+	#Daño de cada golpe del Wendigo (o % de vida si wendigoGravity=true).
+	#Range: 0.0 ~ 1000.0
+	wendigoMight = 7.0
+	#Velocidad del Wendigo (el original era 0.7, muy rápido).
+	#Range: 0.05 ~ 1.0
+	wendigoSpeed = 0.4
+	#Permitir que el Wendigo aparezca también de día.
+	spawnDuringDay = false
+	#Poner un Corazón de Wendigo en el cofre bonus de los mundos nuevos (como el original).
+	heartInBonusChest = true
+

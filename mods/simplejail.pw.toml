@@ -1,0 +1,8 @@
+name = "SimpleJail (Forge)"
+filename = "simplejail-forge-1.20.1.jar"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/simplejail-forge-1.20.1.jar"
+hash-format = "sha256"
+hash = "13dc6b29ef0f13980d66590ed297259af5289987b308c5938faa133d0169f58a"

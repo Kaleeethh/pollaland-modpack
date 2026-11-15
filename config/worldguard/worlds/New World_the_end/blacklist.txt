@@ -1,0 +1,21 @@
+#
+# WorldGuard blacklist
+#
+# The blacklist lets you block actions, blocks, and items from being used.
+# You choose a set of "items to affect" and a list of "actions to perform."
+#
+###############################################################################
+#
+# Example to block some ore mining and placement:
+# [coal_ore,gold_ore,iron_ore]
+# on-break=deny,log,kick
+# on-place=deny,tell
+#
+# Events that you can detect: on-break, on-destroy-with, on-place, on-use,
+# on-interact, on-drop, on-acquire, on-equip, on-dispense
+#
+# Actions (for events): deny, allow, notify, log, tell, ban, kick
+#
+# Options: ignore-groups, ignore-perms, comment, message
+#
+###############################################################################

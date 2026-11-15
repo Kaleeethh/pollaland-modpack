@@ -1,0 +1,12 @@
+name = "Feature Recycler"
+filename = "Feature-Recycler-forge-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/5610/347/Feature-Recycler-forge-1.0.1.jar"
+hash-format = "sha1"
+hash = "09cc3ac393731861427da593a54fe5628d44eab7"
+
+[update.curseforge]
+file-id = 5610347
+project-id = 1077985

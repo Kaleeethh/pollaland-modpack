@@ -1,0 +1,12 @@
+name = "Reflex AntiLag"
+filename = "reflex-forge-1.0.4+mc1.20.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/WTVzusYD/versions/PkOVQ5Wr/reflex-forge-1.0.4%2Bmc1.20.1.jar"
+hash-format = "sha512"
+hash = "dc46376cb0d28ac749c808c699a4d7fb5c897ffeeaab642878d72fe3d4ebd910f1774939eb60a792e6d2fa8091615479545de1b902190e1c3f37c7db7e11f6e9"
+
+[update.modrinth]
+mod-id = "WTVzusYD"
+version = "PkOVQ5Wr"

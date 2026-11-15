@@ -1,0 +1,12 @@
+name = "Garden Trails"
+filename = "gardentrails-forge-1.20.1-0.1.14.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/oEUTaykr/versions/Rz53TZEd/gardentrails-forge-1.20.1-0.1.14.jar"
+hash-format = "sha512"
+hash = "3a38fbb2b75b9d85f6d88a3abd8135d8cd4e672362aeb5399746411994ca66ec29c23fe01eae7cf89adffb81bb8cf0ae617ae30a9b347dbc88191a3fb8101341"
+
+[update.modrinth]
+mod-id = "oEUTaykr"
+version = "Rz53TZEd"

@@ -1,0 +1,12 @@
+name = "Real Bicycles"
+filename = "real-bicycles-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9400/422/real-bicycles-1.0.0.jar"
+hash-format = "sha1"
+hash = "f4711a9e0aecf5a09066d9c474a444248f6e606d"
+
+[update.curseforge]
+file-id = 9400422
+project-id = 1755974

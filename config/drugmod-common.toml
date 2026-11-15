@@ -1,0 +1,55 @@
+
+[efectos]
+	#Mareo al consumir (como el mod original)
+	nausea = true
+	#Particulas de humo al fumar
+	smoke = true
+
+[adiccion]
+	#Sistema de adiccion y abstinencia
+	addiction = true
+	#Sistema de sobredosis
+	overdose = true
+	#Horas reales sin consumir para que empiece la abstinencia (marihuana, alcohol y MDMA tardan el doble)
+	#Range: 0.05 ~ 48.0
+	withdrawalHours = 1.0
+	#En creativo no hay adiccion, abstinencia ni sobredosis (para probar cosas)
+	creativeExempt = true
+	#Si es true, una sobredosis GRAVE mata si nadie te salva a tiempo: cuando te pasas mucho de la dosis, cuando lo que tomaste era de mala calidad (pureza < 60%), con fentanilo, o si repites sobredosis en menos de 30 min. Si es false, nunca mata (te deja a medio corazon).
+	lethalOverdose = true
+	#Avisar en el chat a jugadores cercanos cuando alguien tiene una sobredosis (para medicos/policias del roleplay)
+	announceOverdose = true
+	#Probabilidad de que una jeringa de heroina venga adulterada con fentanilo
+	#Range: 0.0 ~ 1.0
+	fentanylLacedChance = 0.12
+	#Sonidos falsos (paranoia de la meta, alucinaciones del LSD/hongos)
+	hallucinations = true
+
+[laboratorio]
+	#MODO SIMPLE: la mesa de quimica solo junta recetas. Sin temperatura que importe, sin pureza (siempre 85%), sin explosiones ni humos toxicos.
+	simpleMode = false
+	#Si sobrecalientas la mesa, puede explotar (solo en modo completo)
+	explosions = true
+	#La pureza cambia cuanto duran los efectos (y si esta muy cortada, te sienta mal)
+	purityMatters = true
+
+[otros_mods]
+	#Items de OTROS mods que cuentan como droga para el test, la adiccion y el alcohol.
+	#Formato: "modid:item=sustancia". Sustancias: weed, tobacco, cocaine, opiate, meth, alcohol, psychedelic, mdma
+	#Ejemplo: ["otromod:cerveza=alcohol", "otromod:vino=alcohol"]
+	substances = ["alcocraftplus:chorus_ale=alcohol", "alcocraftplus:digger_bitter=alcohol", "alcocraftplus:drowned_ale=alcohol", "alcocraftplus:ice_beer=alcohol", "alcocraftplus:kvass=alcohol", "alcocraftplus:leprechaun_cider=alcohol", "alcocraftplus:magnet_pilsner=alcohol", "alcocraftplus:nether_porter=alcohol", "alcocraftplus:nether_star_lager=alcohol", "alcocraftplus:night_rauch=alcohol", "alcocraftplus:sun_pale_ale=alcohol", "alcocraftplus:wither_stout=alcohol", "croptopia:beer=alcohol", "croptopia:wine=alcohol", "croptopia:mead=alcohol", "croptopia:rum=alcohol", "vinery:aegis_wine=alcohol", "vinery:apple_cider=alcohol", "vinery:apple_wine=alcohol", "vinery:bolvar_wine=alcohol", "vinery:bottle_mojang_noir=alcohol", "vinery:chenet_wine=alcohol", "vinery:cherry_wine=alcohol", "vinery:chorus_wine=alcohol", "vinery:clark_wine=alcohol", "vinery:creepers_crush=alcohol", "vinery:cristel_wine=alcohol", "vinery:eiswein=alcohol", "vinery:glowing_wine=alcohol", "vinery:jellie_wine=alcohol", "vinery:kelp_cider=alcohol", "vinery:lilitu_wine=alcohol", "vinery:magnetic_wine=alcohol", "vinery:mead=alcohol", "vinery:mellohi_wine=alcohol", "vinery:noir_wine=alcohol", "vinery:red_wine=alcohol", "vinery:solaris_wine=alcohol", "vinery:stal_wine=alcohol", "vinery:strad_wine=alcohol", "vinery:villagers_fright=alcohol", "nethervinery:blazewine_pinot=alcohol", "nethervinery:ghastly_grenache=alcohol", "nethervinery:improved_lava_fizz=alcohol", "nethervinery:improved_nether_fizz=alcohol", "nethervinery:lava_fizz=alcohol", "nethervinery:nether_fizz=alcohol", "nethervinery:netherite_nectar=alcohol", "brewinandchewin:beer=alcohol", "brewinandchewin:vodka=alcohol", "brewinandchewin:mead=alcohol", "brewinandchewin:rice_wine=alcohol", "brewinandchewin:egg_grog=alcohol", "brewinandchewin:strongroot_ale=alcohol", "brewinandchewin:saccharine_rum=alcohol", "brewinandchewin:pale_jane=alcohol", "brewinandchewin:salty_folly=alcohol", "brewinandchewin:steel_toe_stout=alcohol", "brewinandchewin:glittering_grenadine=alcohol", "brewinandchewin:bloody_mary=alcohol", "brewinandchewin:red_rum=alcohol", "brewinandchewin:withering_dross=alcohol", "brewinandchewin:dread_nog=alcohol", "brewery:beer_barley=alcohol", "brewery:beer_haley=alcohol", "brewery:beer_hops=alcohol", "brewery:beer_nettle=alcohol", "brewery:beer_oat=alcohol", "brewery:beer_wheat=alcohol", "brewery:whiskey_ak=alcohol", "brewery:whiskey_carrasconlabel=alcohol", "brewery:whiskey_cristelwalker=alcohol", "brewery:whiskey_highland_hearth=alcohol", "brewery:whiskey_jamesons_malt=alcohol", "brewery:whiskey_jojannik=alcohol", "brewery:whiskey_lilitusinglemalt=alcohol", "brewery:whiskey_maggoallan=alcohol", "brewery:whiskey_smokey_reverie=alcohol", "beachparty:cocoa_cocktail=alcohol", "beachparty:coconut_cocktail=alcohol", "beachparty:honey_cocktail=alcohol", "beachparty:melon_cocktail=alcohol", "beachparty:pumpkin_cocktail=alcohol", "beachparty:sweetberries_cocktail=alcohol"]
+	#Si te pasas del minimo de tragos (alcoholMinDrinks), las bebidas de otros mods tambien suben la borrachera de este mod
+	alcoholMakesDrunk = true
+	#Cuantos tragos de alcohol (en 20 min) hacen falta para que el test de positivo. Cerveza, vino, coctel... cada uno cuenta 1.
+	#Range: 1 ~ 64
+	alcoholMinDrinks = 5
+	#Los items de otros mods tambien suman adiccion
+	addiction = true
+
+[mundo]
+	#Probabilidad de que la hierba suelte cada tipo de semilla
+	#Range: 0.0 ~ 1.0
+	seedChance = 0.02
+	#El comerciante errante vende semillas
+	wandererTrades = true
+

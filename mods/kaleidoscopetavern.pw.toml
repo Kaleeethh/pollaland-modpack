@@ -1,0 +1,12 @@
+name = "Kaleidoscope Tavern"
+filename = "kaleidoscopetavern-1.2.0-forge+mc1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/r9RZvhiJ/versions/mUnU2u9e/kaleidoscopetavern-1.2.0-forge%2Bmc1.20.1.jar"
+hash-format = "sha512"
+hash = "485bcee9241e97856bb4bdf52d9752911a12c68d770048bbbb8400a8043ba02b312df94aa98d240abe03a94dc2ad0b627327a0029dd2dfa209d82cd1a6677865"
+
+[update.modrinth]
+mod-id = "r9RZvhiJ"
+version = "mUnU2u9e"

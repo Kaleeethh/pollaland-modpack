@@ -1,0 +1,30 @@
+{
+  "core": {
+    "language": "es",
+    "enforceGamemode": true,
+    "enforceFlight": true,
+    "firstSpawnOverride": true,
+    "firstSpawnLocation": "",
+    "joinDestinationEnabled": false,
+    "joinDestination": "",
+    "defaultRespawnInWorld": true,
+    "confirmTimeout": 30,
+    "liveUnload": true,
+    "autoPurgeEntities": false,
+    "showWorldAliasInChat": false,
+    "feesToTreasury": false
+  },
+  "portals": {
+    "enabled": true,
+    "wandMaterial": "minecraft:wooden_axe",
+    "portalCooldown": 1000,
+    "flintFillsPortals": true,
+    "clearOnRemove": true,
+    "teleportVehicles": true
+  },
+  "inventories": {
+    "enabled": true,
+    "useGameModeProfiles": false,
+    "applyLastLocationOnWorldTeleport": true
+  }
+}

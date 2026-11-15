@@ -1,0 +1,8 @@
+name = "Pollacoins"
+filename = "pollacoins-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/pollacoins-2.0.0.jar"
+hash-format = "sha256"
+hash = "19361cf2f8d2f4014ba5b3d168ec5d5f77f5abfb00f40e8d02e4a849374705ee"

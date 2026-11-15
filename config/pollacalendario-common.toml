@@ -1,0 +1,44 @@
+
+#Fecha: meses y días de verdad encima de las estaciones de Serene Seasons (o de los días de Minecraft si no está).
+[fecha]
+	#Año en el que empezó el mundo
+	#Range: 1 ~ 9000
+	anioBase = 2026
+	#Corre los meses. 0 = el inicio de la primavera es febrero: primavera = feb/mar/abr, verano = may/jun/jul,
+	#otoño = ago/sep/oct, invierno = nov/dic/ene (un mundo nuevo empieza el 1 de febrero; el año cambia el 1 de enero).
+	#1 = la primavera empieza en marzo (verano = jun/jul/ago, como el hemisferio norte). -1 = empieza en enero.
+	#Range: -11 ~ 11
+	desfaseMeses = 0
+	#Usar Serene Seasons si está instalado
+	usarSereneSeasons = true
+	#Sin Serene Seasons: cuántos días de Minecraft dura cada mes
+	#Range: 1 ~ 400
+	diasPorMesSinSS = 30
+
+#Festivos de Pollaland
+[festivos]
+	#Usar la lista de festivos que trae el mod (Navidad, 20 de julio, Velitas, Día de la Arepa…)
+	festivosDelMod = true
+	#Festivos propios: "dd/mm Nombre" (fecha especial) o "dd/mm! Nombre" (festivo, día libre). Ej: "05/08! Día de Kaleth"
+	festivosExtra = []
+	#Avisar en el chat cuando amanece un festivo
+	anunciarFestivos = true
+
+#Eventos personales (la agenda)
+[eventos]
+	#Eventos máximos por jugador
+	#Range: 1 ~ 1000
+	maxEventos = 100
+	#Eventos públicos máximos por jugador (salen en el calendario de todos)
+	#Range: 0 ~ 200
+	maxPublicos = 10
+	#Invitados máximos por evento
+	#Range: 1 ~ 200
+	maxInvitados = 20
+	#Segundos de espera entre crear/editar eventos
+	#Range: 0 ~ 600
+	esperaSegundos = 2
+	#Eventos nuevos máximos por jugador cada hora (de verdad)
+	#Range: 1 ~ 1000
+	maxNuevosPorHora = 30
+

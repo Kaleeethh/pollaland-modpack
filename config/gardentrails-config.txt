@@ -1,0 +1,73 @@
+# Garden Trails configuration
+# Restart required after changes
+
+# Master toggle for chest loot injection
+generateChestLoot=true
+
+# Individual items (only if generateChestLoot=true)
+generateSilk=true
+generateGrapes=true
+generateMaize=true
+generateRice=true
+generateMulberry=true
+
+# Mold in the simple dungeons and the stronghold chests, colored arrows and feathers in the jungle temple chests
+generateMold=true
+generateArrows=true
+generateFeathers=true
+
+# Requires Dawn of Time - replaces white wool with silk in DoT recipes
+dawnOfTimeUseSilk=true
+
+# Requires Armor of the Ages - replaces string with silk in AotA recipes
+armorOfTheAgesUseSilk=true
+
+# Requires Armor of the Ages - Quetzalcoatl armor recipes use Garden Trails green and red feathers
+armorOfTheAgesUseQuetzalFeathers=true
+
+# Plant placement
+# The biomes of each plant come from the datapack tag data/gardentrails/tags/worldgen/biome/has_<plant>.json
+# (the same tag also drives the quetzal spawn). This file only overrides it:
+#   <plant>_enabled=false          the plant does not spawn anymore
+#   <plant>_extra_biomes=a:b,c:d   comma-separated biome IDs added on top of the tag
+# Biomes can only be added here. To remove biomes, override the tag with a datapack.
+# IDs for biomes from mods that are not installed are ignored automatically.
+
+boxwood_bush_enabled=true
+boxwood_bush_extra_biomes=
+camellia_enabled=true
+camellia_extra_biomes=
+commelina_enabled=true
+commelina_extra_biomes=
+cypress_enabled=true
+cypress_extra_biomes=
+geranium_pink_enabled=true
+geranium_pink_extra_biomes=
+geranium_orange_enabled=true
+geranium_orange_extra_biomes=
+geranium_purple_enabled=true
+geranium_purple_extra_biomes=
+geranium_purpleish_enabled=true
+geranium_purpleish_extra_biomes=
+geranium_red_enabled=true
+geranium_red_extra_biomes=
+geranium_white_enabled=true
+geranium_white_extra_biomes=
+ivy_enabled=true
+ivy_extra_biomes=
+mulberry_enabled=true
+mulberry_extra_biomes=
+red_maple_enabled=true
+red_maple_extra_biomes=
+orange_maple_enabled=true
+orange_maple_extra_biomes=
+green_maple_enabled=true
+green_maple_extra_biomes=
+rice_enabled=true
+rice_extra_biomes=
+wild_grape_enabled=true
+wild_grape_extra_biomes=
+wild_maize_enabled=true
+wild_maize_extra_biomes=
+quetzal_enabled=true
+quetzal_extra_biomes=

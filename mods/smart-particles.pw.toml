@@ -1,0 +1,12 @@
+name = "Smart Particles"
+filename = "smart_particles-20.1.10-Forge.jar"
+side = "client"
+
+[download]
+url = "https://edge.forgecdn.net/files/7497/790/smart_particles-20.1.10-Forge.jar"
+hash-format = "sha1"
+hash = "c00e8683ef22d3795e05d9150f51ee92e9a6d78a"
+
+[update.curseforge]
+file-id = 7497790
+project-id = 1420751

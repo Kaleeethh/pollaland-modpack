@@ -1,0 +1,8 @@
+name = "Minecraft Comes Alive"
+filename = "minecraft-comes-alive-7.7.1-beta.5-skins-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/minecraft-comes-alive-7.7.1-beta.5-skins-1.20.1.jar"
+hash-format = "sha256"
+hash = "a5f5a346bc89335ff6ee75c0fc8ceaa1acf2450414963d3c11d6d0fe2f46e60e"

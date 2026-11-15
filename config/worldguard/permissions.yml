@@ -1,0 +1,55 @@
+#
+# Permisos de WorldGuard (version Forge)
+#
+# En Bukkit los permisos los da un plugin como LuckPerms. Aqui se hace con este archivo:
+#  - Los OP (nivel 2 o mas) tienen TODOS los permisos (si "op-permissions: true" en config.yml).
+#  - "default": lo que tienen todos los jugadores normales.
+#  - "groups": permisos por grupo. Un jugador esta en un grupo si:
+#       * esta en un equipo del scoreboard con ese nombre (/team join vip Kaleth1981)
+#       * aparece en "player-groups"
+#       * tiene ese rol en Kaleth Roleplay (/rol jugador policia -> grupo "policia")
+#       * su rango de Pollaland Rangos se llama asi (rango "Moderador" -> grupo "moderador")
+#  - "players": permisos para un jugador concreto (nombre o UUID).
+#  - "-permiso" quita un permiso. "permiso.*" da todo lo que empiece asi.
+#  - Recarga con /wg reload.
+#
+# Lista de permisos: https://worldguard.enginehub.org/en/latest/permissions/
+#
+default:
+  - worldguard.region.info.own
+  - worldguard.region.info.member
+  - worldguard.region.list.own
+  - worldguard.region.list.member
+  - worldguard.region.select.own.*
+  - worldguard.region.select.member.*
+  - worldguard.region.addmember.own.*
+  - worldguard.region.removemember.own.*
+  - worldguard.region.flag.regions.own.*
+  - worldguard.region.flag.flags.greeting.*
+  - worldguard.region.flag.flags.farewell.*
+  - worldguard.region.flag.flags.greeting-title.*
+  - worldguard.region.flag.flags.farewell-title.*
+  - worldguard.region.flag.flags.pvp.*
+  - worldguard.region.flag.flags.use.*
+  - worldguard.region.flag.flags.chest-access.*
+  - worldguard.region.flag.flags.interact.*
+  - worldguard.region.wand
+
+groups:
+  vip:
+    - worldguard.region.claim
+    - worldguard.region.redefine.own.*
+  policia:
+    - worldguard.region.info.*
+    - worldguard.region.list
+  juez:
+    - worldguard.region.info.*
+    - worldguard.region.list
+
+player-groups:
+  # Kaleth1981:
+  #   - vip
+
+players:
+  # Kaleth1981:
+  #   - worldguard.*

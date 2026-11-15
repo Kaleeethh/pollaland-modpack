@@ -1,0 +1,8 @@
+name = "WaterFrames"
+filename = "waterframes-FORGE-mc1.20.1-v2.2.0-beta.6-wm301.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/waterframes-FORGE-mc1.20.1-v2.2.0-beta.6-wm301.jar"
+hash-format = "sha256"
+hash = "d10f18a781d1fdeeca7237cbecd581df6ec60be9939a3e44e8d941bf783a547a"

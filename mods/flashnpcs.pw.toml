@@ -1,0 +1,8 @@
+name = "Flash's NPCs"
+filename = "flashnpcs-1.20.1-1.2.0.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/flashnpcs-1.20.1-1.2.0.jar"
+hash-format = "sha256"
+hash = "60397532c04eba950f1c3cb9f855100cc3b67f0f4414840bdf204c6a9496b08e"

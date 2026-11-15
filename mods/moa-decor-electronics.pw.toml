@@ -1,0 +1,12 @@
+name = "MOA DECOR: ELECTRONICS"
+filename = "MOAdecor ELECTRONICS 1.20.1.A.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/5311/793/MOAdecor%20ELECTRONICS%201.20.1.A.jar"
+hash-format = "sha1"
+hash = "3872fef55f75009bc029dbb1826dc10d10cd21cf"
+
+[update.curseforge]
+file-id = 5311793
+project-id = 1012624

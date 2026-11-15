@@ -1,0 +1,12 @@
+name = "Large Ore Deposits"
+filename = "AdLods-1.20.1-8.1.12.0-build.2294.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Y3a9lWnU/versions/DeFz1p58/AdLods-1.20.1-8.1.12.0-build.2294.jar"
+hash-format = "sha512"
+hash = "01a06257f782d05da14b78d5a2dcd4e314e59000c7c7cc153b551ab0d2c47a125e01598d2c601ccae3f964b207f0b30bca02b4b4bb58e68750ab7f0316029a22"
+
+[update.modrinth]
+mod-id = "Y3a9lWnU"
+version = "DeFz1p58"

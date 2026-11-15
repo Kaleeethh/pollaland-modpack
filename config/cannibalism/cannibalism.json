@@ -1,0 +1,89 @@
+[
+  {
+    "entity": "player",
+    "drops": [],
+    "minDamage": 5.0,
+    "maxDamage": 5.5
+  },
+  {
+    "entity": "minecraft:cow",
+    "drops": [
+      "minecraft:leather",
+      "minecraft:beef"
+    ],
+    "minDamage": 2.5,
+    "maxDamage": 3.0
+  },
+  {
+    "entity": "minecraft:mooshroom",
+    "drops": [
+      "minecraft:leather",
+      "minecraft:beef"
+    ],
+    "minDamage": 2.5,
+    "maxDamage": 3.0
+  },
+  {
+    "entity": "minecraft:chicken",
+    "drops": [],
+    "minDamage": 10.0,
+    "maxDamage": 10.0
+  },
+  {
+    "entity": "minecraft:pig",
+    "drops": [
+      "minecraft:porkchop"
+    ],
+    "minDamage": 2.5,
+    "maxDamage": 3.0
+  },
+  {
+    "entity": "minecraft:sheep",
+    "drops": [
+      "minecraft:white_wool",
+      "minecraft:mutton"
+    ],
+    "minDamage": 2.5,
+    "maxDamage": 3.0
+  },
+  {
+    "entity": "minecraft:villager",
+    "drops": [
+      "cannibalism:villagerflesh"
+    ],
+    "minDamage": 5.0,
+    "maxDamage": 6.0
+  },
+  {
+    "entity": "minecraft:wandering_trader",
+    "drops": [
+      "cannibalism:villagerflesh"
+    ],
+    "minDamage": 5.0,
+    "maxDamage": 6.0
+  },
+  {
+    "entity": "mca:*villager*",
+    "drops": [
+      "cannibalism:villagerflesh"
+    ],
+    "minDamage": 5.0,
+    "maxDamage": 6.0
+  },
+  {
+    "entity": "minecraft:witch",
+    "drops": [
+      "cannibalism:witchflesh"
+    ],
+    "minDamage": 5.0,
+    "maxDamage": 6.0
+  },
+  {
+    "entity": "minecraft:zombie*",
+    "drops": [
+      "minecraft:rotten_flesh"
+    ],
+    "minDamage": 2.5,
+    "maxDamage": 3.0
+  }
+]

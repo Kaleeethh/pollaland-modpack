@@ -1,0 +1,12 @@
+name = "Villages&Pillages"
+filename = "villagesandpillages-forge-2.0.0+mc1.20.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/klXONLDA/versions/SCYHfAoy/villagesandpillages-forge-2.0.0%2Bmc1.20.1.jar"
+hash-format = "sha512"
+hash = "44c872fc8971c4a9d8484d10bb1ad73ba5f4ee783d7dae50c5b2b02315eb6801ccc9d9ade075689aeae5dbec963d77ec4761d77c36380e1c7ef34495f13e183f"
+
+[update.modrinth]
+mod-id = "klXONLDA"
+version = "SCYHfAoy"

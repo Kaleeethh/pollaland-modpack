@@ -1,0 +1,12 @@
+name = "Load My F***ing Tags"
+filename = "lmft-1.0.4+1.20.1-forge.jar"
+side = "server"
+
+[download]
+url = "https://edge.forgecdn.net/files/4892/299/lmft-1.0.4%2B1.20.1-forge.jar"
+hash-format = "sha1"
+hash = "e44a12eb51813b16faaab89b8073ec63c746c1b0"
+
+[update.curseforge]
+file-id = 4892299
+project-id = 656346

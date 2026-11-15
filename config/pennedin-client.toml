@@ -1,0 +1,15 @@
+#Floating info panel above the pen you're looking at.
+#AUTO = show it unless Jade or WTHIT is installed (they show the same info in their tooltip).
+#Allowed Values: AUTO, ALWAYS, NEVER
+infoPanel = "AUTO"
+#Occasional quiet animal noises from occupied pens.
+ambientSounds = true
+#Volume of those noises (vanilla animals are 1.0).
+#Range: 0.0 ~ 1.0
+ambientVolume = 0.35
+#Size of the miniature for other mobs (llamas, modded animals) when the automatic size looks wrong,
+#as "mob id=size". For scale, vanilla pigs and cows are drawn at about 0.35 and rabbits at 0.66,
+#e.g. ["aether:aerbunny=0.4", "livingthings:penguin=0.35"]. To find a mob's id, look at it with F3 on
+#("Targeted Entity"). Also editable in game: the Config button in the mod list.
+mobSizes = []
+

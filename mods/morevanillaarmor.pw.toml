@@ -1,0 +1,12 @@
+name = "MoreVanillaArmor"
+filename = "MoreVanillaArmor-1.20.1-5.1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7N4JJ4JD/versions/lfA4tAo8/MoreVanillaArmor-1.20.1-5.1.2.jar"
+hash-format = "sha512"
+hash = "c3ab5645d1748f4feac333ca1121c0b2d21aa3e5c8b0c5e3f21c267ac7a15473c2810845cdf7403b31f3f2ceb34b75b27635fcf50e01b20dcd64134b3d567bf5"
+
+[update.modrinth]
+mod-id = "7N4JJ4JD"
+version = "lfA4tAo8"

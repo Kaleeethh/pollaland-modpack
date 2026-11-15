@@ -1,0 +1,8 @@
+name = "Candy World"
+filename = "candymod-1.20.1-1.1.5.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/candymod-1.20.1-1.1.5.jar"
+hash-format = "sha256"
+hash = "2358bb19400fb3962af1fb5923f9093d8ccee39b33107c7a579812b6787baf0a"

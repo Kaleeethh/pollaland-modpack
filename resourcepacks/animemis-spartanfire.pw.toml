@@ -1,0 +1,12 @@
+name = "animemis-spartanfire"
+filename = "AnimEmis_spartanfire_1.20.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/LhopUTeN/versions/JLStuzcB/AnimEmis_spartanfire_1.20.1.zip"
+hash-format = "sha512"
+hash = "8c268883d11d287610dde8f27f7453798e831df7c185faadcdd3270f5718adc86d55fb19d8d97570600a38963ba17751552246798192df6b5979c8a838c15107"
+
+[update.modrinth]
+mod-id = "LhopUTeN"
+version = "JLStuzcB"

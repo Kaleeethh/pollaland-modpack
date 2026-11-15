@@ -1,0 +1,12 @@
+name = "Blocks +"
+filename = "Blocks+1.20.1-1.7.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/5037/697/Blocks%2B1.20.1-1.7.jar"
+hash-format = "sha1"
+hash = "76cb3bc633d0312d65d4fceff3ca072ebc003578"
+
+[update.curseforge]
+file-id = 5037697
+project-id = 473206

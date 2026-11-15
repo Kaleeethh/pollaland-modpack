@@ -1,0 +1,12 @@
+name = "Fresh Waystones Texture"
+filename = "waystones_26.2.zip"
+side = "client"
+
+[download]
+url = "https://edge.forgecdn.net/files/8430/312/waystones_26.2.zip"
+hash-format = "sha1"
+hash = "de82059c31ac45953b4ef968afb0a53cf2217639"
+
+[update.curseforge]
+file-id = 8430312
+project-id = 860903

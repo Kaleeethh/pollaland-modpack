@@ -1,0 +1,39 @@
+
+#Tiempo de juego por dia: una barra (como la del Wither) que va bajando y te expulsa al terminar.
+[tiempo]
+	#Activar el limite de tiempo
+	enabled = true
+	#Minutos de juego por dia para cada jugador (360 = 6 horas)
+	#Range: 1 ~ 1440
+	minutesPerDay = 360
+	#Hora del dia (0-23) en la que se reinicia el tiempo de todos
+	#Range: 0 ~ 23
+	resetHour = 6
+	#Zona horaria para la hora de reinicio (ej. America/Toronto, America/Bogota, Europe/Madrid). Vacio = la del servidor
+	timezone = "America/Toronto"
+	#Los OP (admins) no tienen limite de tiempo
+	exemptOps = true
+	#La barra se ve por defecto (cada jugador la puede esconder con /time-bar hide)
+	barVisibleByDefault = true
+	#Avisos en el chat cuando quedan estos minutos
+	warnMinutes = [30, 10, 5, 1]
+	#Texto de la barra. %tiempo% = tiempo que queda
+	barText = "Tiempo de juego restante: %tiempo%"
+	#Mensaje al expulsar. %reinicio% = hora del reinicio, %espera% = cuanto falta
+	kickMessage = "§cSe acabó tu tiempo de juego de hoy.\n§7Podrás volver a las §e%reinicio%§7 (en %espera%)."
+	#Mensaje si entra sin tiempo
+	loginDenied = "§cYa usaste todo tu tiempo de juego de hoy.\n§7Podrás volver a las §e%reinicio%§7 (en %espera%)."
+	#Aviso. %tiempo% = lo que queda
+	warnMessage = "§e⏳ Te quedan §c%tiempo%§e de juego por hoy."
+
+#/vanish para admins: invisible del todo (sin cuerpo, nombre, efectos ni lista de jugadores).
+[vanish]
+	enabled = true
+	#Nivel de OP necesario para /vanish
+	#Range: 0 ~ 4
+	opLevel = 2
+	#Los otros admins si ven a los que estan en vanish
+	opsSeeVanished = true
+	#No mostrar 'entro/salio del juego' de los admins en vanish
+	hideJoinLeave = true
+

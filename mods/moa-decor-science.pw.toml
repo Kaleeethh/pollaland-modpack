@@ -1,0 +1,12 @@
+name = "MOA DECOR: SCIENCE"
+filename = "MOAdecor SCIENCE 1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/4731/831/MOAdecor%20SCIENCE%201.20.1.jar"
+hash-format = "sha1"
+hash = "4ad9e1bb7b28842c8678fc242b8ed71a1f55bfc8"
+
+[update.curseforge]
+file-id = 4731831
+project-id = 701517

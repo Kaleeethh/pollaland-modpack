@@ -1,0 +1,8 @@
+name = "WaterMedia"
+filename = "watermedia-3.0.1-fix-youtube.jar"
+side = "client"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/watermedia-3.0.1-fix-youtube.jar"
+hash-format = "sha256"
+hash = "d9327a9d52becc9977a7b3b7c90f149496acfef70e668f3e272deac44095422b"

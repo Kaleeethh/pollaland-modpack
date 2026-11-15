@@ -1,0 +1,12 @@
+name = "YUNG's Better Caves (Forge/NeoForge)"
+filename = "YungsBetterCaves-1.20.1-Forge-2.0.7.jar"
+side = "server"
+
+[download]
+url = "https://edge.forgecdn.net/files/8806/70/YungsBetterCaves-1.20.1-Forge-2.0.7.jar"
+hash-format = "sha1"
+hash = "1bd1beb5f0dac5e6257055051ba37d13245e63f9"
+
+[update.curseforge]
+file-id = 8806070
+project-id = 340583

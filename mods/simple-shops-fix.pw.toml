@@ -1,0 +1,12 @@
+name = "Simple Shops Fix"
+filename = "simpleshopsfix-1.1.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/YyCCUIjA/versions/A7i0OEv1/simpleshopsfix-1.1.1.jar"
+hash-format = "sha512"
+hash = "2c55e44b4ff7db3bf8c9e83c962201f36f7ab324172ab3f84622d699f76077ed1b41a72cabd388121c52e8a3bb6ec7fed106cad1827df18b8f9d752d99453707"
+
+[update.modrinth]
+mod-id = "YyCCUIjA"
+version = "A7i0OEv1"

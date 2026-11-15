@@ -1,0 +1,12 @@
+name = "Underground Rivers"
+filename = "underground-rivers-1.0.1-forge-1.20.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/Y7J94SaP/versions/JvPEMMZv/underground-rivers-1.0.1-forge-1.20.1.jar"
+hash-format = "sha512"
+hash = "1523009bbc9d27022901356265f814b5e9854612e60f56fd597bdfde2d568b12a381460643f4c63e09397f0d77ec73a872abd39a908e8ad5b6f1901130b76a28"
+
+[update.modrinth]
+mod-id = "Y7J94SaP"
+version = "JvPEMMZv"

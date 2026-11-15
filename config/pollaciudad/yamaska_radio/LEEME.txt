@@ -1,0 +1,17 @@
+Yamaska Vice — la radio de los carros
+
+Pon tus canciones (.ogg, .wav o .mp3) en la carpeta de cada emisora. Todas las emisoras salen en la rueda de la radio
+(tecla R en el carro); una emisora sin canciones suena en silencio hasta que le pongas música. No se pueden crear emisoras nuevas.
+Lo más liviano es .ogg; el .wav pesa unas 10 veces más; el .mp3 funciona (lo decodifica el mod).
+
+pollacura_fm  ->  Pollacura FM (reguetón)
+sunset_fm  ->  Sunset FM (pop)
+radio_hood_69  ->  Radio Hood 69 (hip-hop / G-funk)
+neon_88  ->  Neón 88 (synthwave de los 80)
+yamaska_rock_98_7  ->  Yamaska Rock 98.7 (rock)
+la_paisa_stereo  ->  La Paisa Stéreo (salsa, vallenato y cumbia)
+radio_garza  ->  Radio Garza (regional mexicano)
+quebec_libre_104_1  ->  Québec Libre 104.1 (música en francés)
+radio_psalmonella  ->  Radio Psalmonella (música sacra (de fábrica))
+
+Sunset FM y Radio Psalmonella ya traen canciones de fábrica; las tuyas se suman.

@@ -1,0 +1,12 @@
+name = "Don't Punch My TACZ"
+filename = "dont-punch-my-tacz-v0.5.2-1.20.1-forge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/BdT7bXL2/versions/bb5cCEvk/dont-punch-my-tacz-v0.5.2-1.20.1-forge.jar"
+hash-format = "sha512"
+hash = "068829c39e38e7b7dd8a778eb15bdbcd295d983f623949901049bafb7469cedc058ae0f8a96f57b90cda9cffecf6bc022d1bfdd3dfd9901c10eba33c8acbfbf9"
+
+[update.modrinth]
+mod-id = "BdT7bXL2"
+version = "bb5cCEvk"

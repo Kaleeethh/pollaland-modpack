@@ -1,0 +1,12 @@
+name = "Penned In"
+filename = "pennedin-1.20.1-forge-1.3.2.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9500/903/pennedin-1.20.1-forge-1.3.2.jar"
+hash-format = "sha1"
+hash = "70215643b77dba689e5b542f1540edbb22ddd212"
+
+[update.curseforge]
+file-id = 9500903
+project-id = 1754140

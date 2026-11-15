@@ -1,0 +1,28 @@
+
+[partidos]
+	#Narrador de los partidos en vivo (televisores y pollaliga.pl)
+	narrador = true
+	#Ruido de la hinchada en los partidos en vivo
+	hinchada = true
+	#Volumen del narrador (0 a 1)
+	#Range: 0.0 ~ 1.0
+	volumenNarrador = 1.0
+	#Volumen de la hinchada (0 a 1)
+	#Range: 0.0 ~ 1.0
+	volumenHinchada = 0.6
+	#Hasta cuántos bloques se oye un televisor
+	#Range: 4 ~ 64
+	alcanceTele = 24
+
+[pc]
+	#Tamaño de la pantalla del PC: 0 normal, 1 grande (90% de la ventana), 2 pantalla completa
+	#Range: 0 ~ 2
+	pantallaPc = 0
+
+[sitios]
+	#Música de los sitios de PollaNet (psalmonella.pl: himno y música de fondo). Sigue también el volumen de Música del juego.
+	musicaSitios = true
+	#Volumen de la música de los sitios (0 a 1)
+	#Range: 0.0 ~ 1.0
+	volumenSitios = 1.0
+

@@ -1,0 +1,12 @@
+name = "Faz's Roleplay Clothes"
+filename = "FazRoleplayClothes-1.20.1-2.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/zjMFbe7B/versions/ADWMsZR2/FazRoleplayClothes-1.20.1-2.4.jar"
+hash-format = "sha512"
+hash = "7406dcebb21941d94a55402b9c2c91cd636b46847cd6ce15fdd766dd32f35acf5d49b07ba3126ba594b5bb47aa44ab4aecb1e4d5cc8ee456380427a7ae48897c"
+
+[update.modrinth]
+mod-id = "zjMFbe7B"
+version = "ADWMsZR2"

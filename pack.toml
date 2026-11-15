@@ -1,0 +1,13 @@
+name = "Pollaland"
+author = "Kaleth"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "15d14ee9342e16555a5ad03799452bc8298684b39373da4382a30b5216651bf8"
+
+[versions]
+forge = "47.4.26"
+minecraft = "1.20.1"

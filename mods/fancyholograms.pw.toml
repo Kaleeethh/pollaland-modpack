@@ -1,0 +1,8 @@
+name = "FancyHolograms"
+filename = "fancyholograms-forge-1.20.1-2.9.0.jar"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/fancyholograms-forge-1.20.1-2.9.0.jar"
+hash-format = "sha256"
+hash = "8decf0184c2193cdf93e348d554e8cb303bfa7d7bf97e632b844368b5fc10b22"

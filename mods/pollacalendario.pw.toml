@@ -1,0 +1,8 @@
+name = "Pollaland Calendario"
+filename = "pollacalendario-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/pollacalendario-1.20.1.jar"
+hash-format = "sha256"
+hash = "7c20b369453cad03ba527e52cf1d55e6a4101e1c68fedba82b5912e986a5b666"

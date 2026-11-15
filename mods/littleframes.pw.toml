@@ -1,0 +1,8 @@
+name = "LittleFrames"
+filename = "LittleFrames_FORGE_v1.4.3-wm3_mc1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/LittleFrames_FORGE_v1.4.3-wm3_mc1.20.1.jar"
+hash-format = "sha256"
+hash = "3281710e4702f88e765af48f3349fda6b49f3d6518168ea0ffdc7267488406a3"

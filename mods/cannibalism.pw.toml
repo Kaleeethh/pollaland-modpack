@@ -1,0 +1,8 @@
+name = "Cannibalism"
+filename = "cannibalism-1.20.1-5.6.10.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/cannibalism-1.20.1-5.6.10.jar"
+hash-format = "sha256"
+hash = "0cc35d99a6205f2a8ff28515d9d2c464f4305975481845a56be67e584f55af6e"

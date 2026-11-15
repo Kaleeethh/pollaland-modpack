@@ -1,0 +1,12 @@
+name = "MineTraps"
+filename = "MineTraps-1.20.2-(v.2.3.0a).jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1TVTyRG9/versions/lOxSW86d/MineTraps-1.20.2-%28v.2.3.0a%29.jar"
+hash-format = "sha512"
+hash = "6d46136bda93aa3641035cc7d440be1abf2b65139f80aaec7ad75a126ecd097c7fbc7974ad205f4cb8dfc1207149bbede940ad9e787efbb57ec43e9021d35f5b"
+
+[update.modrinth]
+mod-id = "1TVTyRG9"
+version = "lOxSW86d"

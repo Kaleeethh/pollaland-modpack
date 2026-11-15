@@ -1,0 +1,920 @@
+
+#Banco de Pollaland
+[banco]
+	#Billetes y monedas que acepta el banco: item=valor
+	efectivo = ["pollacoins:silver_pollacoin=1", "pollacoins:gold_pollacoin=10", "pollacoins:emerald_pollacoin=50", "pollacoins:diamond_pollacoin=100", "pollacoins:netherite_pollacoin=500"]
+	#Monedas que el banco rechaza (contrabando)
+	contrabando = ["kaleth_roleplay:chimbocoin_bronce", "kaleth_roleplay:chimbocoin_plata", "kaleth_roleplay:chimbocoin_oro", "kaleth_roleplay:chimbocoin_quemada"]
+	#Bono de bienvenida al abrir la cuenta en un cajero
+	#Range: 0 ~ 9223372036854775807
+	bonoBienvenida = 20
+	#Apuesta máxima en los retos de los juegos en línea del PC (Triqui, Cuatro en línea, Pong, Damas, Ajedrez, Batalla Naval); 0 = solo amistosos
+	#Range: 0 ~ 1000000000
+	apuestaMaximaJuegos = 1000
+	#Pagos en datáfonos sin PIN (tapeando la tarjeta) hasta este monto; más que eso pide insertar la tarjeta y el PIN
+	#Range: 0 ~ 9223372036854775807
+	limiteSinPin = 500
+
+#Sueldos: se pagan desde la Plata del Gobierno cada X minutos jugados
+[sueldos]
+	#Cada cuantos minutos conectado se cobra el sueldo (0 = sin sueldos)
+	#Range: 0 ~ 1440
+	cadaMinutos = 60
+	#Sueldo por rango (Pollaland Rangos) o rol (Kaleth Roleplay): nombre=monto
+	porRango = ["Miembro=50", "Policía=300", "policia=300", "juez=400", "Alcalde=500", "Moderador=200", "Médico=300", "Admin=0"]
+
+#Inmobiliaria
+[inmobiliaria]
+	#Comisión (%) que se lleva el Estado cuando un jugador le vende a otro
+	#Range: 0 ~ 100
+	comision = 5
+	#Impuesto a la propiedad (% del precio) que se cobra a los dueños cada periodo
+	#Range: 0.0 ~ 100.0
+	impuesto = 0.5
+	#Duración de un periodo de alquiler / impuestos, en horas reales (168 = 1 semana)
+	#Range: 1 ~ 8760
+	periodoHoras = 168
+	#Si WorldGuard está instalado, cada propiedad crea su región (si no, el mod protege las propiedades por su cuenta)
+	usarWorldGuard = true
+
+#Celular
+[celular]
+	#Rangos que reciben las llamadas al 123 de la policía (además del rol policía/juez de Kaleth Roleplay)
+	rangosPolicia = ["Policía", "Policia"]
+	#Rangos que reciben las llamadas al 911 (ambulancia)
+	rangosMedicos = ["Médico", "Medico", "Doctor", "Paramédico"]
+	#Precio en la tienda PollaTel por un número nuevo al azar
+	#Range: 0 ~ 9223372036854775807
+	precioNumeroNuevo = 25
+	#Precio en la tienda PollaTel por elegir tu propio número
+	#Range: 0 ~ 9223372036854775807
+	precioNumeroPersonalizado = 150
+	#Segundos que suena una llamada antes de quedar como perdida
+	#Range: 5 ~ 120
+	segundosTimbre = 30
+	#Si Simple Voice Chat está instalado, las llamadas crean un grupo de voz privado entre los dos
+	llamadasDeVoz = true
+
+#Bolsa de Valores de Pollaland (los impuestos se cambian en el juego con /impuestos)
+[bolsa]
+	#Crear las empresas del mundo basadas en los mods instalados (Create, Farmer's Delight, etc.)
+	empresasDelMundo = true
+	#Cada cuántos segundos se mueven los precios
+	#Range: 10 ~ 3600
+	segundosPorMovimiento = 120
+	#Probabilidad de que salga una noticia en cada movimiento (0 a 1)
+	#Range: 0.0 ~ 1.0
+	probabilidadNoticia = 0.25
+	#Cada cuántas horas reales pagan dividendos las empresas del mundo
+	#Range: 1 ~ 720
+	horasDividendos = 2
+	#Lo que cuesta registrar una empresa (se devuelve si la rechazan)
+	#Range: 0 ~ 9223372036854775807
+	registroEmpresa = 5000
+	#Rangos que pueden ser la Superintendencia Financiera (además de los OP)
+	rangosRegulador = ["Admin", "Regulador"]
+
+#Banca: tarjetas de crédito, bancos de jugadores, inflación y divisas
+[banca]
+	#Rangos que son agentes del Banco de Pollaland (entregan tarjetas de crédito), además de los OP
+	rangosBanquero = ["Banquero", "Admin"]
+	#Licencia para abrir un banco (se devuelve si lo rechazan)
+	#Range: 0 ~ 9223372036854775807
+	licenciaBanco = 20000
+	#Capital mínimo que hay que meter al abrir un banco
+	#Range: 0 ~ 9223372036854775807
+	capitalMinimoBanco = 50000
+	#Máximo por CDT en el Banco de Pollaland (los intereses los paga su reserva)
+	#Range: 100 ~ 9223372036854775807
+	maximoCdtNacional = 1000000
+	#Horas reales entre extractos de las tarjetas de crédito (y duración de un periodo de CDT)
+	#Range: 1 ~ 720
+	horasExtracto = 24
+	#Cada cuántos minutos se recalcula la inflación
+	#Range: 1 ~ 1440
+	minutosInflacion = 30
+	#Cada cuántas horas reales se gira la nómina de los contratos de trabajo
+	#Range: 1 ~ 720
+	horasNomina = 24
+	#true = impuestos, bolsa, crédito, divisas y sueldos públicos funcionan desde el día 1. false = cada parte se prende con /economia (ya o programada)
+	economiaActivaDesdeElInicio = false
+
+#Cripto (Bitpolla): minería con rigs, billeteras y la red
+[cripto]
+	#Cada cuántos minutos reales sale un bloque de la red
+	#Range: 1 ~ 120
+	minutosPorBloque = 10
+	#Recompensa inicial por bloque, en Bitpolla
+	#Range: 1.0E-4 ~ 1000.0
+	recompensaInicial = 0.04
+	#Cada cuántos bloques la recompensa se parte a la mitad (432 = 3 días con bloques de 10 min)
+	#Range: 1 ~ 1000000
+	bloquesPorHalving = 432
+	#Potencia de los 'mineros del mundo' (MH/s): así siempre salen bloques aunque nadie mine
+	#Range: 0.1 ~ 1.0E9
+	hashrateDelMundo = 20.0
+	#Cada cuántos bloques la red se vuelve el doble de difícil (los mineros del mundo crecen). 0 = nunca
+	#Range: 0 ~ 1000000
+	bloquesParaDoblarDificultad = 288
+	#Rigs por persona que minan a la vez (los demás quedan quietos)
+	#Range: 1 ~ 100
+	rigsMaximosPorPersona = 6
+
+#Marcas y entretenimiento
+[lanzamientos]
+	#Cada cuántas horas reales una marca saca un producto nuevo (celulares, audífonos, piezas de PC)
+	#Range: 1 ~ 720
+	horasEntreLanzamientos = 24
+	#Cada cuántas horas reales sale una novela nueva en Nalgaflix
+	#Range: 1 ~ 720
+	horasEntreNovelas = 48
+	#Cada cuántos días reales sale una actualización de cada sistema de celular (iPollaOS, One Polla UI, HuevOS…)
+	#Range: 1 ~ 365
+	diasEntreActualizacionesCelular = 5
+
+#El misterio de PollaOS (ERROR 0333): cosas raras que pasan muy de vez en cuando
+[misterio]
+	#Activar los sucesos extraños
+	activado = true
+	#Minutos reales (en promedio) entre un suceso y otro para cada jugador
+	#Range: 20 ~ 10080
+	minutosEntreSucesos = 150
+
+#Seguridad: hackeos a las empresas que guardan datos (tarjetas, cuentas, contraseñas de PC)
+[seguridad]
+	#Cada cuántos días reales (en promedio) hackean a una empresa (nunca dos veces seguidas a la misma)
+	#Range: 1 ~ 365
+	diasEntreHackeos = 3
+
+#PollaBet (pollabet.pl, el casino) y PolliMarket Speculation (pollimarket.pl, apuestas Sí/No). No crean plata: la casa paga con su banca
+[pollabet]
+	#Banca de la casa: con cuánto arranca (se siembra una sola vez) y la meta: lo que pase de aquí se va cada día a la Plata del Gobierno
+	#Range: 0 ~ 9223372036854775807
+	bancaInicial = 50000
+	#Apuesta máxima por jugada en el casino
+	#Range: 1 ~ 9223372036854775807
+	apuestaMaxima = 2000
+	#Milisegundos mínimos entre una apuesta y otra del mismo jugador
+	#Range: 0 ~ 600000
+	esperaEntreApuestasMs = 1500
+	#PolliMarket: lo máximo que una persona puede poner en un mismo mercado
+	#Range: 1 ~ 9223372036854775807
+	mercadoMaximoPorPersona = 5000
+	#PolliMarket: comisión (%) de la bolsa que va para la Plata del Gobierno al resolverse
+	#Range: 0.0 ~ 20.0
+	mercadoComision = 2.0
+	#PolliMarket: crear mercados solos con datos del juego (acciones de la bolsa, elecciones, lluvia)
+	mercadosAutomaticos = true
+	#PolliMarket: horas reales que dura un mercado de acciones ("¿cierra por encima de… mañana?")
+	#Range: 1 ~ 720
+	horasMercadoAcciones = 24
+	#Polljuegos: impuesto al juego inicial (% de la utilidad bruta diaria de cada casa regulada, 0-50). Después lo cambia el alcalde en la app Impuestos ("juego")
+	#Range: 0.0 ~ 50.0
+	impuestoJuegoInicial = 20.0
+	#Hipódromo de Pollaland: una carrera cada cuántos minutos reales
+	#Range: 1 ~ 120
+	hipodromoMinutos = 4
+	#Polljuegos: lo que cuesta la licencia de una casa de apuestas de un jugador (y cada renovación); va a la Plata del Gobierno
+	#Range: 0 ~ 9223372036854775807
+	licenciaCasaCosto = 5000
+	#Polljuegos: banca mínima que el dueño tiene que poner de su cuenta para abrir la casa
+	#Range: 0 ~ 9223372036854775807
+	licenciaCasaBancaMinima = 10000
+	#Polljuegos: días reales que dura la licencia (después hay que renovarla)
+	#Range: 1 ~ 3650
+	licenciaCasaDias = 365
+	#Polljuegos: licencia extra para el juego exclusivo de una casa
+	#Range: 0 ~ 9223372036854775807
+	licenciaJuegoExclusivo = 3000
+	#Banca inicial de cada casa NPC (Bet69, Wpolla, RushPollas, Codepollas, Steak): sale UNA vez de la Plata del Gobierno, cuando alcance; también es su meta
+	#Range: 0 ~ 9223372036854775807
+	casasNpcBanca = 30000
+	#Banca inicial de Loto-Pollabec (sale UNA vez de la Plata del Gobierno, cuando alcance)
+	#Range: 0 ~ 9223372036854775807
+	loteriaBanca = 40000
+	#Una casa (que no sea PollaBet) con menos banca libre que esto se cierra sola hasta que la recarguen
+	#Range: 0 ~ 9223372036854775807
+	casaBancaMinimaAbierta = 1000
+	#Gratteux: premios desde este monto hay que reclamarlos en la Lotería (y salen en las noticias)
+	#Range: 1 ~ 9223372036854775807
+	premioReclamar = 1000
+	#Lotto 6/49: precio del boleto
+	#Range: 1 ~ 1000000
+	lottoPrecio = 5
+	#Lotto 6/49: hora del sorteo diario (hora del servidor, 0-23)
+	#Range: 0 ~ 23
+	lottoHora = 21
+	#Lotto 6/49: % de cada boleto que va a la Plata del Gobierno (el resto es la bolsa de premios)
+	#Range: 0.0 ~ 90.0
+	lottoMargen = 40.0
+
+#Sitios de PollaNet: WhoryFans (suscripciones a creadores), Vivo o Preso (recompensas) y el Quejódromo (peticiones al alcalde)
+[sitios]
+	#WhoryFans: cuántos días reales dura un "mes" de suscripción (se renueva solo)
+	#Range: 1 ~ 365
+	whoryfansDiasPorMes = 30
+	#Vivo o Preso: días reales que dura una recompensa antes de vencerse (se le devuelve al que la puso)
+	#Range: 1 ~ 90
+	recompensaDias = 7
+	#Vivo o Preso: recompensa mínima
+	#Range: 1 ~ 1000000
+	recompensaMinima = 100
+	#Quejódromo: firmas mínimas para que el alcalde tenga que responder
+	#Range: 1 ~ 1000
+	firmasMinimas = 5
+	#Quejódromo: o este % de los jugadores que entraron en los últimos 7 días (lo que sea mayor)
+	#Range: 0 ~ 100
+	firmasPorcentaje = 30
+	#Quejódromo: días reales que tiene el alcalde para responder (si no, sale en las noticias como IGNORADA)
+	#Range: 1 ~ 60
+	diasParaResponder = 3
+
+#Liga Pollaland: fútbol de mentiras (clubes que se compran, apuestas, TransferPollas). La plata no se crea: el fondo sale de la Plata del Gobierno
+[liga]
+	#Tope del fondo de la liga (se siembra una vez desde la Plata del Gobierno y se rellena al empezar cada temporada, máx. 10% de lo que tenga el Gobierno)
+	#Range: 0 ~ 9223372036854775807
+	fondoTope = 150000
+	#Segundos reales que dura un partido transmitido en vivo (los 90 minutos)
+	#Range: 30 ~ 3600
+	segundosPartidoEnVivo = 300
+	#Solo SIN Serene Seasons: días de Minecraft por sub-estación (el año = 12 sub-estaciones = una temporada de fútbol; 30 → 360 días). Con Serene Seasons instalado se ignora: manda la duración real de sus sub-estaciones
+	#Range: 1 ~ 365
+	diasPorSubEstacion = 30
+	#Copa Mundial de la PollaFIFA: cada cuántas temporadas (en los otros veranos se juegan las copas continentales)
+	#Range: 1 ~ 10
+	mundialCadaTemporadas = 2
+	#Margen de la casa (PollaBet) en las apuestas deportivas, en %
+	#Range: 0.0 ~ 30.0
+	margenApuestas = 5.0
+	#Semanas seguidas con el presupuesto en rojo antes de que la liga intervenga el club
+	#Range: 1 ~ 52
+	semanasEnRojo = 2
+	#Premio al campeón de liga (las copas dan un tercio, las supercopas un octavo); sale del fondo
+	#Range: 0 ~ 9223372036854775807
+	premioCampeon = 8000
+	#Taquilla = asistentes × precio de la boleta ÷ este número (el resto es logística de mentiras)
+	#Range: 1 ~ 100000
+	divisorTaquilla = 400
+	#Cuántos clubes puede tener un mismo jugador
+	#Range: 1 ~ 50
+	clubesPorJugador = 2
+	#Investigaciones automáticas (pagos al árbitro, bengalas, fair play...) por temporada en todo el mundo, en promedio
+	#Range: 0.0 ~ 100.0
+	sancionesPorTemporada = 5.0
+	#Polla Sports: la LPH (hockey) se juega. Si se apaga, la temporada en curso se suspende y las apuestas abiertas se devuelven
+	hockeyActivo = true
+	#Impuesto a los fichajes inicial (% del monto) cuando hay un club con dueño de por medio; lo paga el comprador encima del monto. Después lo cambia el alcalde en la app Impuestos ("fichajes", 0-15)
+	#Range: 0.0 ~ 15.0
+	impuestoFichajesInicial = 5.0
+	#Impuesto a los fichajes entre dos clubes de la IA inicial (%): plata nueva del Banco de la República (Economía virtual) para la Plata del Gobierno. El alcalde lo cambia ("fichajes_ia", 0-5)
+	#Range: 0.0 ~ 5.0
+	impuestoFichajesIAInicial = 2.0
+	#Tope semanal de lo que se cobra por fichajes entre clubes de la IA (en pesos del nivel de precios inicial; sube con la inflación). Lo que pase del tope no se cobra
+	#Range: 0 ~ 9223372036854775807
+	topeSemanalImpuestoFichajesIA = 3000
+
+#Rama Judicial de Pollaland (juzgado.pl): demandas civiles entre jugadores, conciliaciones, fallos y apelaciones
+[juzgado]
+	#Arancel judicial: % de lo que se demanda (lo paga el demandante al radicar)
+	#Range: 0.0 ~ 50.0
+	arancelPorcentaje = 2.0
+	#Arancel judicial mínimo
+	#Range: 0 ~ 1000000
+	arancelMinimo = 20
+	#% del arancel (y de la apelación) que se le paga al juez que decide el caso; el resto va a la Plata del Gobierno
+	#Range: 0 ~ 100
+	honorariosJuezPorcentaje = 40
+	#Días reales que tiene el demandado para contestar (después se puede fallar en rebeldía)
+	#Range: 1 ~ 60
+	diasParaContestar = 3
+	#Días reales para apelar un fallo (una sola vez)
+	#Range: 1 ~ 60
+	diasParaApelar = 2
+	#Costo de apelar: % de lo demandado
+	#Range: 0.0 ~ 50.0
+	apelacionPorcentaje = 5.0
+	#Costo mínimo de apelar
+	#Range: 0 ~ 1000000
+	apelacionMinimo = 50
+	#Demandas contra el Estado: tope semanal de indemnizaciones que salen de la Plata del Gobierno (indexado a la inflación). Lo que pase queda como deuda del Estado y se paga las semanas siguientes. 0 = sin tope
+	#Range: 0 ~ 1000000000
+	indemnizacionesTopeSemanal = 20000
+	#Demandas contra el Estado: un fallo de más de esto (indexado) espera la aprobación de un admin antes de pagarse (/juzgado estado aprobar|rechazar <id> o el panel de admin). 0 = nunca
+	#Range: 0 ~ 1000000000
+	indemnizacionAprobacionAdmin = 10000
+	#Fallos de más de esta plata (y las disculpas públicas) salen solos en las noticias
+	#Range: 0 ~ 9223372036854775807
+	fallosNoticiaDesde = 5000
+
+#Red Cebolla: sitios .cebolla (solo desde un PC con VPN), Pollance (exchange de Bitpolla) y los operativos de la Policía
+[cebolla]
+	#Días reales que un sitio tumbado por la Policía queda caído antes de volver en una dirección .cebolla nueva
+	#Range: 1 ~ 60
+	diasParaVolver = 3
+	#Fútbol pirata: segundos de retraso de la señal (los goles llegan tarde)
+	#Range: 5 ~ 600
+	retrasoPirataSegundos = 45
+	#Foro anónimo: segundos mínimos entre dos mensajes de la misma persona
+	#Range: 0 ~ 3600
+	esperaForoSegundos = 30
+	#Pollance: comisión (%) de cada compra o venta de Bitpolla; va a la Plata del Gobierno
+	#Range: 0.0 ~ 20.0
+	comisionPollance = 1.0
+	#Mercado Cebolla: % de los avisos que en realidad son de la Policía (operativo encubierto)
+	#Range: 0.0 ~ 100.0
+	operativosPorcentaje = 20.0
+	#Fútbol pirata: % de probabilidad (por minuto viéndolo) de que al PC le entre un virus que lo pone lento
+	#Range: 0.0 ~ 100.0
+	virusPorcentaje = 15.0
+
+#Derechos de TV: cada competencia la transmite en vivo una plataforma de streaming (DAZPOLLA, Peapollo, beINPollas…). Marcadores, tablas y avisos siguen gratis
+[streaming]
+	#¿Hace falta suscripción para ver en vivo? (false = todo gratis, como antes)
+	suscripcionObligatoria = true
+	#Días reales que dura un "mes" de suscripción a una plataforma (se renueva solo)
+	#Range: 1 ~ 365
+	diasPorMes = 30
+	#Días antes de la renovación en que se avisa si el precio cambia por la inflación (todas las suscripciones)
+	#Range: 1 ~ 60
+	diasAvisoPrecio = 3
+	#% de los partidos transmitidos que salen «Partido gratis» para todos (se anuncia)
+	#Range: 0.0 ~ 100.0
+	partidoGratisPorcentaje = 10.0
+
+#Finanzas del Gobierno: topes para que nadie se lleve la Plata del Gobierno antes de irse (y la Contraloría)
+[gobierno]
+	#Tope de gasto semanal: % de la Plata del Gobierno al empezar la semana (los sueldos no cuentan)
+	#Range: 0.0 ~ 100.0
+	topeSemanalPorcentaje = 20.0
+	#Reserva intocable: % de la Plata del Gobierno al empezar la semana que solo pueden usar los sueldos y las obligaciones legales
+	#Range: 0.0 ~ 100.0
+	reservaPorcentaje = 30.0
+	#Pagos desde esta plata (indexada a la inflación) necesitan doble firma: el alcalde firma y un admin pone la segunda firma
+	#Range: 1 ~ 9223372036854775807
+	dobleFirmaDesde = 5000
+	#Ley de garantías: mientras haya elecciones abiertas para alcalde (o el cargo que maneja la Plata del Gobierno) no se puede gastar a dedo ni publicar contratos
+	leyDeGarantias = true
+	#Semanas de inhabilidad (no puede ser alcalde ni dueño de banco) para un funcionario condenado por la Fiscalía
+	#Range: 0 ~ 520
+	semanasInhabilidad = 4
+	#Contraloría y Cumplimiento: una cuenta abierta hace menos de estas horas es 'nueva'
+	#Range: 1 ~ 10000
+	horasCuentaNueva = 72
+	#Cumplimiento: consignaciones en efectivo desde esta plata (indexada) generan alerta
+	#Range: 1 ~ 9223372036854775807
+	alertaEfectivoDesde = 5000
+	#Lo máximo que cabe en la bóveda de un banco (efectivo físico para la ventanilla)
+	#Range: 0 ~ 9223372036854775807
+	bovedaMaxima = 100000
+
+#Banco de la República de Pollaland (banco central): crédito de fundación, préstamos de liquidez y Fogafín. La tasa y el encaje los pone la Junta Directiva (admins) con /banrep
+[bancoDeLaRepublica]
+	#Crédito de fundación del Banco de Pollaland (indexado a la inflación; como mínimo lo que debe en CDTs y su encaje)
+	#Range: 0 ~ 9223372036854775807
+	creditoFundacion = 50000
+	#Semanas en que el Banco de Pollaland paga el crédito de fundación (cuotas iguales, solo cuando le sobra plata del encaje)
+	#Range: 1 ~ 1000
+	semanasCreditoFundacion = 52
+	#Puntos de castigo sobre la tasa de referencia en los préstamos de liquidez
+	#Range: 0.0 ~ 50.0
+	castigoLiquidez = 2.0
+	#Fogafín: % de cada CDT que el banco paga como seguro de depósitos
+	#Range: 0.0 ~ 10.0
+	primaFogafin = 0.5
+	#Fogafín: lo máximo que cubre por CDT si el banco no puede pagar (indexado a la inflación)
+	#Range: 0 ~ 9223372036854775807
+	coberturaFogafin = 20000
+	#Cuota de supervisión: % semanal de los depósitos (CDTs) de cada banco que paga al Banco de la República (la Junta la cambia con /banrep cuota)
+	#Range: 0.0 ~ 5.0
+	cuotaSupervision = 0.5
+	#Bancos pequeños: con menos depósitos que esto (indexado) no pagan cuota de supervisión
+	#Range: 0 ~ 9223372036854775807
+	exentoCuotaHasta = 10000
+	#Comisión que paga el comercio al banco que emitió la tarjeta de crédito en cada compra (%)
+	#Range: 0.0 ~ 5.0
+	comisionTarjeta = 1.5
+	#Cada cuántos minutos se mueven los clientes virtuales de los bancos
+	#Range: 1 ~ 1440
+	minutosClientesVirtuales = 20
+	#Cuántos clientes virtuales hay en total (se reparten entre los bancos según sus tasas)
+	#Range: 0 ~ 5000
+	clientesVirtuales = 150
+
+#Partidos políticos (partidos.gov.pl): fundar, donaciones y publicidad. Se vota en las urnas electorales
+[partidos]
+	#Lo que cuesta fundar un partido (indexado a la inflación; los admins no pagan)
+	#Range: 0 ~ 9223372036854775807
+	costoFundar = 500
+	#Tope de donación por persona a cada partido en cada periodo electoral (indexado a la inflación)
+	#Range: 0 ~ 9223372036854775807
+	topeDonacion = 5000
+	#Precio de un paquete de 4 carteles de campaña (indexado a la inflación; lo paga la cuenta del partido)
+	#Range: 0 ~ 9223372036854775807
+	precioCarteles = 60
+	#Máximo de miembros ficticios por partido
+	#Range: 0 ~ 50
+	maxMiembrosFicticios = 12
+	#Votos ciudadanos: un electorado ficticio que vota según las propuestas, lo que le preocupa a la gente, la publicidad, la reputación y la suerte (cada elección se puede apagar en /elecciones partidos)
+	votosCiudadanos = true
+	#Cuánto vale el voto de un jugador en la urna, en % del electorado ciudadano (10% de 100.000 = 10.000 votos; con 5 jugadores: 50.000 contra 100.000)
+	#Range: 0.01 ~ 100.0
+	pesoVotoJugadorPorcentaje = 10.0
+	#Peso fijo del voto de un jugador, en votos ciudadanos (0 = usar el porcentaje de arriba)
+	#Range: 0 ~ 10000000
+	pesoFijoVotoJugador = 0
+	#Cuántos votos ciudadanos hay en cada elección
+	#Range: 0 ~ 1000000
+	electoradoVotosCiudadanos = 100000
+	#Cada cuántos minutos sale la Encuesta Pollaland de una elección abierta
+	#Range: 5 ~ 1440
+	minutosEncuesta = 30
+
+#Medio ambiente: la gente reacciona a la tala, las fábricas, el petróleo y la energía limpia (agenda de las elecciones, noticias, PollaTok, Quejódromo, app Clima). /ambiente para ver el índice
+[ambiente]
+	#¿Se sigue el medio ambiente? (los admins también pueden con /ambiente activar|desactivar)
+	activado = true
+	#¿Salen noticias, publicaciones de PollaTok y peticiones del Quejódromo sobre el ambiente? (máx. una nota cada 3 horas)
+	noticias = true
+	#Bloques que contaminan (peso positivo) o dan energía limpia (negativo): "mod:bloque=peso", "mod:*=peso" o "*palabra*=peso" (palabra completa del nombre: *oil* cuenta crude_oil_pump pero no toilet). Hornos y quemadores solo cuentan encendidos. Al arrancar, el log dice cuáles bloques de este modpack coinciden
+	bloques = ["minecraft:furnace=0.5", "minecraft:blast_furnace=1", "minecraft:smoker=0.4", "minecraft:campfire=0.15", "minecraft:soul_campfire=0.15", "create:blaze_burner=1.5", "create:steam_engine=3", "create:windmill_bearing=-2", "create:water_wheel=-1", "create:large_water_wheel=-2", "create:mechanical_drill=2", "*pumpjack*=6", "*fracking*=6", "*derrick*=5", "*oil_rig*=6", "*refinery*=5", "*crude*=3", "*oil*=2", "*petroleum*=3", "*diesel*=4", "*combustion*=3", "*generator*=2", "*coke_oven*=3", "*smelter*=2", "*smeltery*=2", "*incinerator*=3", "*furnace*=0.5", "*quarry*=4", "*excavator*=3", "*miner*=3", "*mining*=2", "*borer*=3", "*digger*=2", "*drill*=2", "*extractor*=1.5", "*pump*=0.5", "*solar*=-1.5", "*windmill*=-2", "*wind_turbine*=-2"]
+	#Palabras que NO contaminan aunque coincidan con una palabra clave (lámparas, tubos, tanques…)
+	excluir = ["lamp", "lantern", "candle", "torch", "sign", "slab", "stairs", "wall", "fence", "door", "trapdoor", "pipe", "cable", "barrel", "tank", "canister", "bucket", "bottle", "jar", "painting", "poster", "item", "ore"]
+	#Troncos netos por semana que no le preocupan a nadie (talar para construir es normal)
+	#Range: 0.0 ~ 1000000.0
+	toleranciaTalaSemana = 300.0
+	#Cuántos troncos vale romper una rama de Dynamic Trees (un golpe tumba casi todo el árbol)
+	#Range: 0.1 ~ 100.0
+	troncosPorRama = 4.0
+
+#Democracia: mandato del alcalde, elecciones automáticas (si la Constitución las trae), pensión de exalcaldes, compra de votos y de prensa, revocatoria y consultas populares
+[democracia]
+	#El mandato se cuenta con el calendario (pollacalendario): elecciones a mitad del verano del 3er año del mandato y el electo se posesiona al comienzo del invierno (unos 2 años). Sin el mod de calendario (o en false) se cuenta en semanas reales
+	mandatoConCalendario = true
+	#Sub-estación de las elecciones automáticas (0-2 primavera, 3-5 verano, 6-8 otoño, 9-11 invierno; 4 = mitad del verano, MID_SUMMER)
+	#Range: 0 ~ 11
+	subEstacionElecciones = 4
+	#En qué año del mandato son las elecciones (1 = el año en que empezó; 3 = el tercero)
+	#Range: 1 ~ 10
+	anioEleccionesDelMandato = 3
+	#Sub-estación en que se posesiona el alcalde electo (9 = comienzo del invierno, EARLY_WINTER). Mientras tanto gobierna el alcalde saliente
+	#Range: 0 ~ 11
+	subEstacionPosesion = 9
+	#Con calendario: el ganador queda de alcalde electo y se posesiona en la sub-estación de arriba (false = recibe el cargo al cerrar las urnas)
+	posesionAplazada = true
+	#Opinión pública (ficticia): inclinación de cada segmento de ciudadanos en el eje izquierda (-1) a derecha (+1). Formato segmento=valor separados por comas, p. ej. "primaria=0.1,universitario=-0.1,joven=-0.05,mayor=0.05,urbano=-0.05,rural=0.05". Segmentos: primaria, bachiller, tecnico, universitario, joven, adulto, mayor, urbano, rural. Vacío = valores de juego sorteados por mundo (nada de esto es un dato real)
+	opinionInclinaciones = ""
+	#Opinión pública: fuerza del sesgo del statu quo (crítica extra cuando el gobierno cambia de ideología de golpe; se va pasando)
+	#Range: 0.0 ~ 5.0
+	opinionStatuQuo = 1.0
+	#Propaganda del Gobierno: costo base de una campaña (indexado a la inflación)
+	#Range: 1 ~ 1000000
+	propagandaCosto = 300
+	#Propaganda del Gobierno: cuánto mueve una campaña a los indecisos (antes de los rendimientos decrecientes)
+	#Range: 0.0 ~ 1.0
+	propagandaEfecto = 0.06
+	#Propaganda del Gobierno: campañas máximas por semana
+	#Range: 0 ~ 20
+	propagandaPorSemana = 3
+	#Sin calendario: cuántas semanas reales dura el mandato antes de las elecciones automáticas
+	#Range: 1 ~ 104
+	mandatoSemanas = 4
+	#Cuántas horas duran abiertas las elecciones automáticas
+	#Range: 1.0 ~ 720.0
+	horasEleccionesAutomaticas = 72.0
+	#El cargo de las elecciones automáticas (el que maneja la Plata del Gobierno)
+	cargoAutomatico = "Alcalde"
+	#Horas que dura la elección que se repite cuando la Registraduría anula una por compra de votos
+	#Range: 1.0 ~ 720.0
+	horasEleccionRepetida = 48.0
+	#Horas que dura abierta una revocatoria o una consulta popular (después de que un admin la aprueba)
+	#Range: 0.5 ~ 720.0
+	horasRevocatoriaYConsulta = 24.0
+	#Pensión de exalcaldes: % del sueldo del rango Alcalde (por defecto $500 en /sueldos; si se quita o queda en 0, se usa el monto fijo de abajo)
+	#Range: 0.0 ~ 100.0
+	pensionPorcentajeSueldo = 50.0
+	#Pensión de exalcaldes: monto fijo por pago (indexado a la inflación) cuando el Alcalde no tiene sueldo
+	#Range: 0 ~ 1000000
+	pensionFija = 150
+	#Cada cuántas horas reales se paga la pensión
+	#Range: 1 ~ 720
+	pensionCadaHoras = 24
+	#Pensión de exalcaldes: tiempo mínimo en el cargo, en % del mandato (sumando periodos). Con calendario: 50 = 1 año del calendario; sin él, % de mandatoSemanas en tiempo real. 0 = sin mínimo
+	#Range: 0.0 ~ 100.0
+	pensionMinimoMandatoPorcentaje = 50.0
+	#Compra de votos (mercado negro): precio base de 1.000 votos ciudadanos (indexado; cada paquete sale 15% más caro que el anterior)
+	#Range: 1 ~ 1000000
+	precioMilVotos = 400
+	#Tope de votos comprados por candidato en cada elección (% del electorado)
+	#Range: 0.0 ~ 50.0
+	topeVotosCandidatoPorcentaje = 8.0
+	#Tope de votos que compra una persona en cada elección (% del electorado)
+	#Range: 0.0 ~ 50.0
+	topeVotosCompradorPorcentaje = 5.0
+	#Investigación de irregularidades: probabilidad = 1 - e^(-k x), x = % del electorado comprado + 0,8 por nota de prensa comprada (más con denuncias)
+	#Range: 0.0 ~ 10.0
+	kDeteccion = 0.15
+	#Días después del cierre en que todavía se puede denunciar una elección
+	#Range: 0 ~ 60
+	diasDenuncia = 3
+	#Precio de una nota comprada a un periodista (mercado negro, indexado)
+	#Range: 1 ~ 1000000
+	precioPeriodista = 2500
+	#Revocatoria: apoyo necesario (firmas × peso del voto + ciudadanos según el malestar) en % del electorado
+	#Range: 1.0 ~ 100.0
+	revocatoriaPorcentaje = 25.0
+	#Revocatoria: días reales de gracia al empezar un mandato (no se puede pedir antes)
+	#Range: 0 ~ 60
+	revocatoriaDiasGracia = 3
+	#Impuesto a una sustancia que se legaliza por consulta popular (% extra sobre cada venta legal, a la Plata del Gobierno)
+	#Range: 0.0 ~ 100.0
+	impuestoSustanciaPorcentaje = 15.0
+
+#Orden público: golpes de Estado (/golpe) y huelgas y protestas (/protesta)
+[ordenPublico]
+	#1 = se pueden dar golpes de Estado (los admins también con /golpe activar|desactivar)
+	#Range: 0 ~ 1
+	golpesActivados = 1
+	#Minutos reales que los golpistas tienen que sostener la Alcaldía sin defensores adentro
+	#Range: 1 ~ 240
+	golpeMinutos = 10
+	#Minutos reales que puede durar un intento: si no lo logran en ese tiempo, fracasa
+	#Range: 2 ~ 720
+	golpeMinutosMaximos = 30
+	#Golpistas mínimos (el cabecilla + los que se unen con /golpe unirme) para que corra el reloj
+	#Range: 1 ~ 50
+	golpeMinParticipantes = 2
+	#Con esta cantidad de conectados o menos, basta 1 golpista
+	#Range: 0 ~ 100
+	golpePocosJugadores = 3
+	#Días reales entre un intento de golpe y el siguiente
+	#Range: 0 ~ 365
+	golpeDiasEntreIntentos = 3
+	#Días reales desde que arranca el servidor en que no se pueden dar golpes
+	#Range: 0 ~ 365
+	golpeDiasGraciaServidor = 3
+	#Días reales desde que empieza un mandato en que no se pueden dar golpes
+	#Range: 0 ~ 365
+	golpeDiasGraciaMandato = 1
+	#Radio por defecto de la zona de la Alcaldía (/golpe zona)
+	#Range: 2 ~ 128
+	golpeRadio = 12
+	#Monto de la demanda de la Fiscalía por rebelión a cada golpista si la Constitución no trae un artículo con multa (indexado)
+	#Range: 0 ~ 100000000
+	golpeMontoRebelion = 5000
+	#1 = hay huelgas y protestas
+	#Range: 0 ~ 1
+	protestasActivadas = 1
+	#Malestar (%) que, sostenido, saca a la gente a la calle
+	#Range: 1 ~ 100
+	protestaMalestarPorcentaje = 60
+	#Horas reales que el malestar tiene que estar alto para que haya protesta
+	#Range: 1 ~ 720
+	protestaHorasMalestar = 24
+	#Horas reales que dura una protesta si nadie hace nada
+	#Range: 1 ~ 72
+	protestaHorasDuracion = 2
+	#Horas reales entre el fin de una protesta y la siguiente
+	#Range: 0 ~ 720
+	protestaHorasEntre = 12
+	#Manifestantes ficticios (aldeanos con pancarta) como máximo en la plaza
+	#Range: 0 ~ 30
+	protestaMaxNpc = 8
+	#Paro: % menos de impuestos a transferencias, sueldos y patrimonio que se recauda durante la protesta
+	#Range: 0 ~ 50
+	protestaRecortePorcentaje = 10
+	#Lo que cuesta la mesa de diálogo (de la Plata del Gobierno, indexado)
+	#Range: 0 ~ 100000000
+	protestaCostoDialogo = 1500
+	#Radio por defecto de la plaza de las protestas (/protesta zona)
+	#Range: 2 ~ 64
+	protestaRadio = 8
+	#Minutos reales que vale una orden de allanamiento firmada por un juez (el juez puede poner otro con /orden aprobar <n> <minutos>)
+	#Range: 1 ~ 240
+	allanamientoMinutos = 30
+
+#SSAP: Sociedad de Seguro Automovilístico de Pollaland (vehículos de Immersive Vehicles): placas, licencias, puntos, fotomultas y seguros
+[vehiculos]
+	#Matrícula anual de un vehículo (indexada a la inflación). Va toda a la Plata del Gobierno; una parte es el seguro SSAP de lesiones
+	#Range: 0 ~ 10000000
+	registroCosto = 250
+	#% de la matrícula que es la contribución al seguro SSAP de lesiones (sale aparte en el libro del Gobierno)
+	#Range: 0 ~ 100
+	registroSeguroPorcentaje = 30
+	#Días de Minecraft que dura la matrícula (un año de Pollaland)
+	#Range: 1 ~ 10000
+	registroDias = 96
+	#Examen teórico para el permiso de aprendiz (indexado)
+	#Range: 0 ~ 1000000
+	examenTeoricoCosto = 60
+	#Examen práctico (con examinador) que paga el aspirante cada vez que lo presenta (indexado)
+	#Range: 0 ~ 1000000
+	examenPracticoCosto = 120
+	#Días mínimos con permiso de aprendiz antes del examen práctico
+	#Range: 0 ~ 1000
+	aprendizDias = 2
+	#Minutos reales que hay que esperar para repetir el práctico después de perderlo
+	#Range: 0 ~ 100000
+	examenEsperaMinutos = 30
+	#Duración mínima del práctico (segundos) para poder aprobarlo
+	#Range: 0 ~ 3600
+	examenMinSegundos = 120
+	#Distancia mínima del práctico (bloques) para poder aprobarlo
+	#Range: 0 ~ 100000
+	examenMinMetros = 500
+	#Faltas graves máximas para aprobar el práctico (una eliminatoria siempre lo pierde)
+	#Range: 0 ~ 100
+	examenGravesMax = 1
+	#Faltas leves máximas para aprobar el práctico
+	#Range: 0 ~ 100
+	examenLevesMax = 5
+	#% del valor del práctico que se le paga al examinador (el resto va a la Plata del Gobierno)
+	#Range: 0 ~ 100
+	examinadorPorcentaje = 40
+	#Exámenes prácticos que puede tomar un examinador por día de Minecraft
+	#Range: 1 ~ 1000
+	examenesPorDia = 6
+	#1 = al aprobar el práctico se da la licencia probatoria (y luego la completa); 0 = la completa de una
+	#Range: 0 ~ 1
+	licenciaProbatoria = 0
+	#Días con licencia probatoria (sin suspensiones) para pasar a la completa
+	#Range: 0 ~ 1000
+	probatorioDias = 7
+	#Puntos con los que se suspende el permiso de aprendiz o la licencia probatoria
+	#Range: 1 ~ 100
+	puntosProbatorio = 4
+	#Puntos con los que se suspende la licencia completa
+	#Range: 1 ~ 100
+	puntosCompleta = 15
+	#Días de Minecraft que dura una suspensión de la licencia
+	#Range: 0 ~ 1000
+	suspensionDias = 3
+	#Días de Minecraft que duran los puntos en el registro (192 = 2 años de Pollaland)
+	#Range: 1 ~ 100000
+	puntosDuranDias = 192
+	#Además (0 = no): horas reales después de las que vencen los puntos
+	#Range: 0 ~ 100000
+	puntosDuranHoras = 0
+	#Límite (km/h) que sugiere /ssap zona para una zona de ciudad
+	#Range: 5 ~ 400
+	limiteCiudad = 50
+	#Límite (km/h) que sugiere /ssap zona para una carretera
+	#Range: 5 ~ 400
+	limiteCarretera = 100
+	#Límite (km/h) fuera de toda zona y lejos de las señales
+	#Range: 5 ~ 400
+	limiteGeneral = 90
+	#Bloques alrededor de una señal de velocidad donde manda su límite
+	#Range: 4 ~ 256
+	radioSenal = 40
+	#Límite (km/h) alrededor de una señal de zona escolar
+	#Range: 5 ~ 400
+	limiteEscolar = 30
+	#Placa personalizada: lo que cuesta pedirla (una vez, indexado)
+	#Range: 0 ~ 10000000
+	placaPersonalizadaCosto = 300
+	#Placa personalizada: cuota anual de manejo que se cobra con la matrícula (indexada)
+	#Range: 0 ~ 10000000
+	placaPersonalizadaAnual = 40
+	#1 = al vender el vehículo la placa personalizada se queda con el dueño (el carro sale con una placa normal); 0 = se va con el carro
+	#Range: 0 ~ 1
+	placaSigueAlDueno = 1
+	#km/h de tolerancia antes de una fotomulta
+	#Range: 0 ~ 100
+	tolerancia = 5
+	#km/h por encima del límite desde los que el exceso es grave (delito: multa y cárcel)
+	#Range: 1 ~ 400
+	graveSobre = 30
+	#Bloques que mide una cámara de fotomultas
+	#Range: 4 ~ 96
+	camaraRango = 24
+	#Segundos entre dos fotomultas al mismo vehículo
+	#Range: 1 ~ 3600
+	camaraEsperaSegundos = 45
+	#Prima anual del seguro de responsabilidad civil (obligatorio) de Seguros El Pollo Seguro (indexada)
+	#Range: 0 ~ 10000000
+	seguroRC = 180
+	#Prima anual del seguro todo riesgo (RC + choque/destrucción + robo) de Seguros El Pollo Seguro (indexada)
+	#Range: 0 ~ 10000000
+	seguroTodoRiesgo = 650
+	#Deducible del todo riesgo (indexado)
+	#Range: 0 ~ 10000000
+	seguroDeducible = 400
+	#Lo máximo que paga el todo riesgo por un vehículo destruido o robado (indexado)
+	#Range: 0 ~ 1000000000
+	seguroCobertura = 6000
+	#Días de Minecraft entre dos reclamos de la misma persona
+	#Range: 0 ~ 1000
+	reclamoEsperaDias = 7
+	#Días desde la denuncia de robo para poder reclamar (por si aparece)
+	#Range: 0 ~ 1000
+	roboEsperaDias = 2
+	#Lo que paga el seguro SSAP (de la Plata del Gobierno) si un accidente de tránsito te mata (indexado; una vez por día)
+	#Range: 0 ~ 10000000
+	indemnizacionLesiones = 150
+	#Parque automotor ficticio: 1 = los ciudadanos que no son jugadores registran carros en la SSAP (y pagan); 0 = apagado
+	#Range: 0 ~ 1
+	parqueFicticio = 1
+	#% de los compradores ficticios de los concesionarios que son de Pollaland (el concesionario paga la matrícula y el carro entra al registro)
+	#Range: 0 ~ 100
+	parqueCompradoresPct = 50
+	#Máximo de carros ficticios en el registro (si se llena, el más viejo se chatarriza)
+	#Range: 10 ~ 5000
+	parqueTope = 300
+	#Carros ficticios con los que arranca el registro (ya circulaban: no pagan nada)
+	#Range: 0 ~ 1000
+	parqueInicial = 40
+	#Matrículas ficticias nuevas por semana real (además de las de los concesionarios)
+	#Range: 0 ~ 100
+	parqueNuevosSemana = 3
+	#% del parque ficticio que cambia de dueño cada semana (paga el traspaso)
+	#Range: 0 ~ 100
+	parqueTraspasosPct = 3
+	#% del parque ficticio que renueva la matrícula (con el seguro SSAP de lesiones) cada semana
+	#Range: 0 ~ 100
+	parqueRenovacionesPct = 4
+	#% del parque ficticio que recibe una fotomulta cada semana
+	#Range: 0 ~ 100
+	parqueMultasPct = 4
+	#% del parque ficticio que se chatarriza cada semana (los más viejos, más)
+	#Range: 0 ~ 100
+	parqueChatarraPct = 2
+	#Lo que cobra la SSAP por un traspaso ficticio (indexado)
+	#Range: 0 ~ 1000000
+	parqueTraspasoCosto = 40
+	#Valor de una fotomulta ficticia (indexado)
+	#Range: 0 ~ 1000000
+	parqueMultaCosto = 80
+	#Tope semanal de lo que entra del parque ficticio: % de lo que le entró de verdad a la Plata del Gobierno en los últimos 7 días
+	#Range: 0 ~ 100
+	parqueRecaudoPct = 3
+	#Ese tope nunca baja de esto (indexado; para que al principio pase algo)
+	#Range: 0 ~ 1000000
+	parqueRecaudoMin = 200
+	#Ese tope nunca pasa de esto (indexado)
+	#Range: 0 ~ 10000000
+	parqueRecaudoMax = 1500
+
+#Universidad Nacional de Pollaland: carreras (Derecho, Judicatura, Policía, Examinador de tránsito, Periodismo, Finanzas, Psicología, Ciencia Política), examen y tarjeta profesional
+[universidad]
+	#Matrícula de una carrera (indexada a la inflación). Incluye el libro y el primer examen. Va a la Plata del Gobierno
+	#Range: 0 ~ 10000000
+	matriculaCosto = 400
+	#Lo que cuesta repetir el examen después de perderlo (indexado)
+	#Range: 0 ~ 10000000
+	examenCosto = 100
+	#Duplicado del libro o de la tarjeta profesional (indexado)
+	#Range: 0 ~ 10000000
+	duplicadoCosto = 50
+	#Minutos reales con el libro (desde la matrícula) antes de poder presentar el examen
+	#Range: 0 ~ 10000
+	lecturaMinutos = 5
+	#Preguntas por examen (se sacan al azar del banco de cada carrera)
+	#Range: 3 ~ 20
+	preguntas = 10
+	#% de respuestas buenas para aprobar
+	#Range: 1 ~ 100
+	aprobarPorcentaje = 70
+	#Minutos reales para repetir el examen después de perderlo
+	#Range: 0 ~ 100000
+	esperaMinutos = 30
+	#Minutos para contestar el examen (después se vence y hay que volver a empezar)
+	#Range: 1 ~ 1000
+	examenMinutos = 20
+	#1 = /rol no da un rol con carrera (abogado, juez, policía, examinador, periodista) sin tarjeta profesional vigente, ningún banco contrata empleados sin la de Finanzas, y ejercer sin ella se bloquea y se multa; 0 = no se exige
+	#Range: 0 ~ 1
+	exigirTarjeta = 1
+	#Días reales después de instalar la universidad (o de llegar una carrera nueva, como Finanzas) en un mundo que ya existía antes de empezar a exigir la tarjeta (los mundos nuevos no tienen gracia)
+	#Range: 0 ~ 365
+	diasGracia = 7
+	#Horas reales entre dos multas automáticas por ejercicio ilegal a la misma persona
+	#Range: 1 ~ 10000
+	multaCadaHoras = 24
+
+#Casos ficticios de los roles (juez, policía, abogado, periodista, examinador, banca, concesionario, psicólogo), el despacho del alcalde, los partidos ficticios con su alcalde automático y la Psicología
+[rolesYGobierno]
+	#1 = llegan casos ficticios a los roles en servicio; 0 = apagado
+	#Range: 0 ~ 1
+	casosActivos = 1
+	#Ritmo «normal»: llegan casosPorTanda casos cada casoMin–casoMaxMinutos minutos reales (seguido ×0,6, poco ×2)
+	#Range: 1 ~ 600
+	casoMinMinutos = 5
+	#Ritmo «normal»: ver casoMinMinutos
+	#Range: 1 ~ 600
+	casoMaxMinutos = 8
+	#Cuántos casos llegan en esa ventana de minutos (4 cada 5–8 min ≈ uno cada 1,25–2 min)
+	#Range: 1 ~ 20
+	casosPorTanda = 4
+	#Máximo de casos abiertos a la vez por persona (los demás esperan)
+	#Range: 1 ~ 12
+	casosAbiertosMax = 6
+	#Minutos para atender un caso antes de que pase a «Casos antiguos» (los pausados no vencen)
+	#Range: 5 ~ 1440
+	casoVenceMinutos = 30
+	#Tope de «Casos antiguos» por persona (los más viejos se archivan)
+	#Range: 0 ~ 200
+	casosAntiguosMax = 30
+	#Días reales para resolver un caso antiguo antes de que cuente como «no atendido»
+	#Range: 1 ~ 60
+	casosAntiguosDias = 3
+	#Casos de cada turno que cubre el sueldo (sin bono); el bono empieza en el siguiente
+	#Range: 0 ~ 50
+	casosSinBono = 3
+	#Bono mínimo por caso bien resuelto (indexado; emisión del Banco de la República, se paga el día de pago)
+	#Range: 0 ~ 100000
+	bonoCasoMin = 1
+	#Bono máximo por caso bien resuelto (según calidad y dificultad; indexado)
+	#Range: 0 ~ 100000
+	bonoCaso = 12
+	#Tope de bonos por rol por día real (indexado)
+	#Range: 0 ~ 1000000
+	topeBonoDia = 100
+	#Multa pequeña cuando se acumulan errores (indexada; va a la Plata del Gobierno)
+	#Range: 0 ~ 100000
+	multaError = 40
+	#Errores en los últimos 10 casos para una amonestación (con multa pequeña)
+	#Range: 2 ~ 10
+	erroresAmonestacion = 4
+	#Minutos reales (promedio) entre dos asuntos del despacho del alcalde
+	#Range: 2 ~ 10000
+	despachoMinutosReales = 10
+	#Máximo de asuntos esperando decisión en el despacho
+	#Range: 1 ~ 10
+	despachoPendientesMax = 3
+	#Cuántos partidos ficticios (sin fundador jugador) hay; 0 = ninguno
+	#Range: 0 ~ 4
+	partidosFicticios = 3
+	#1 = si gana un partido ficticio gobierna el alcalde automático; 0 = el cargo queda vacante
+	#Range: 0 ~ 1
+	alcaldeAutomatico = 1
+	#Cada cuántos minutos reales decide algo el alcalde automático
+	#Range: 5 ~ 10000
+	alcaldeAutoMinutos = 60
+	#Lo que cobra el psicólogo de la EPS por una cita (indexado)
+	#Range: 0 ~ 100000
+	consultaPsicologo = 60
+	#Tope de lo que puede cobrar un psicólogo jugador por cita (indexado)
+	#Range: 0 ~ 1000000
+	consultaMax = 500
+	#Horas reales entre dos sesiones de la misma persona
+	#Range: 0 ~ 1000
+	terapiaEsperaHoras = 2
+	#Periodistas: % de sus casos que son «Encargo de nota» (escribir una nota de verdad sobre algo que pasó); el resto, chivatazos
+	#Range: 0 ~ 100
+	encargoPorcentaje = 50
+	#Periodistas: minutos reales para publicar la nota de un encargo (si no, el caso falla)
+	#Range: 10 ~ 10000
+	encargoMinutos = 90
+	#Periodistas: máximo de encargos de nota abiertos a la vez
+	#Range: 1 ~ 6
+	encargosAbiertos = 2
+	#Guía Primeros pasos: premio por paso cumplido (indexado; emisión del Banco de la República). Los admins lo cambian también en Puestos públicos
+	#Range: 0 ~ 10000
+	guiaPremioPaso = 10
+	#Guía Primeros pasos: tope de premios por persona (indexado)
+	#Range: 0 ~ 100000
+	guiaTopePremios = 100
+	#1 = la primera vez que alguien entra le llega la bienvenida (líneas en el chat y el aviso «Primeros pasos»); 0 = no se manda nada (la app Guía sigue igual)
+	#Range: 0 ~ 1
+	bienvenidaPrimerIngreso = 0
+	#Varios cargos: máximo de cargos de Kaleth Roleplay por persona (el principal + los extra: los de autoridad los pone un admin, los de profesión uno mismo con la tarjeta profesional)
+	#Range: 1 ~ 8
+	maxCargos = 3
+	#Varios cargos: parejas que no se pueden tener a la vez («a+b», separadas por coma). Cargos: policia, juez, examinador, inspector, periodista, abogado, psicologo, productor
+	cargosIncompatibles = "juez+abogado,juez+policia,juez+periodista,policia+abogado,inspector+productor"
+	#1 = un solo trabajo por día: el primer turno pagado del día (cargo, tienda, banco, concesionario o Reserva) amarra el trabajo hasta el reinicio diario; 0 = libre
+	#Range: 0 ~ 1
+	unTrabajoPorDia = 1
+	#Hora (0-23) en que empieza el día de trabajo (si Pollatiempo está instalado se usa su resetHour y su zona horaria; si no, esta hora en America/Toronto)
+	#Range: 0 ~ 23
+	trabajoDiaHora = 6
+
+#Copias de seguridad de los datos de los mods de Pollaland (plata, bancos, gobierno, empresas…), en <mundo>/pollaciudad_backups. Se ven y se restauran en PollaOS Admin › Copias de seguridad
+[copiasDeSeguridad]
+	#1 = copias automáticas (cada día del juego y antes de los eventos grandes); 0 = solo las que haga un admin
+	#Range: 0 ~ 1
+	copiasActivadas = 1
+	#Cada cuántos días del juego se hace la copia diaria
+	#Range: 1 ~ 365
+	copiaCadaDiasDelJuego = 1
+	#Si el día del juego no avanza (ciclo de día apagado), igual se hace una copia diaria cada tantas horas reales
+	#Range: 1 ~ 168
+	copiaCadaHorasReales = 2
+	#Cuántas copias diarias se guardan (las más viejas se borran)
+	#Range: 1 ~ 500
+	copiasDiariasQueSeGuardan = 14
+	#Cuántas copias de eventos (elecciones, guerras, olas) se guardan
+	#Range: 1 ~ 500
+	copiasDeEventosQueSeGuardan = 10
+	#Cuántas copias hechas a mano (y las de «antes de restaurar») se guardan
+	#Range: 1 ~ 500
+	copiasManualesQueSeGuardan = 10
+	#Espacio máximo en disco para todas las copias (MB). Si se pasa, se borran las más viejas
+	#Range: 16 ~ 1000000
+	espacioMaximoMB = 2048
+	#Minutos mínimos entre dos copias de eventos (si pasan dos cosas seguidas, basta una copia)
+	#Range: 0 ~ 1440
+	minutosEntreCopiasDeEventos = 3
+	#1 = herramientas de prueba de los admins (/economia limpiar|inyectar|avanzar y PollaOS Admin › Pruebas). SOLO para mundos de prueba; 0 = apagadas
+	#Range: 0 ~ 1
+	herramientasDePrueba = 1
+

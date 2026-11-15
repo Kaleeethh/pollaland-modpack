@@ -1,0 +1,8 @@
+name = "Drug Mod: Reloaded"
+filename = "drugmod-reloaded-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/drugmod-reloaded-1.20.1.jar"
+hash-format = "sha256"
+hash = "da9c29cd845059d13912781af49ab0943722a990cc03a268790002e1f5a0b34f"

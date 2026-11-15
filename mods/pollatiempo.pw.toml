@@ -1,0 +1,8 @@
+name = "Pollaland Tiempo"
+filename = "pollatiempo-1.20.1.jar"
+side = "server"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/pollatiempo-1.20.1.jar"
+hash-format = "sha256"
+hash = "bbf4e28c34bdc938c3065e6b429d0728ff6aa3824b46bda12f5044406a96a7ed"

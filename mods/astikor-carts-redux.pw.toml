@@ -1,0 +1,12 @@
+name = "AstikorCarts Redux"
+filename = "astikorcartsredux-1.2.5.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8659/41/astikorcartsredux-1.2.5.jar"
+hash-format = "sha1"
+hash = "77a95e6f367d286d903ea2bc2aa7145f2ec7108f"
+
+[update.curseforge]
+file-id = 8659041
+project-id = 916493
