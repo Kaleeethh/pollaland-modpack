@@ -4922,6 +4922,11 @@ hash = "eca138055a1d1bfa5f198fc2eb9b097956014a9d9eba935d0de18c18cf2e588a"
 metafile = true
 
 [[files]]
+file = "resourcepacks/updated-aquaculture.pw.toml"
+hash = "d3e565a068bb10614040f842787137919662a5c697ecbad079feaa6999b0bd00"
+metafile = true
+
+[[files]]
 file = "servers.dat"
 hash = "334516095aa4020ede86b286384e5361bcbae3c8c4b861b1b05f1ee00f2bff2d"
 preserve = true

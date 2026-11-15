@@ -1,0 +1,8 @@
+name = "Updated Aquaculture"
+filename = "updated_aquaculture-1.1.zip"
+side = "client"
+
+[download]
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/resourcepacks/updated_aquaculture-1.1.zip"
+hash-format = "sha256"
+hash = "1a2f6758a475656779e50b4b60ff880efe2f5d7ab9b81a276400b7a65234a133"
