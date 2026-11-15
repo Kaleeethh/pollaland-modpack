@@ -1,8 +1,8 @@
 name = "Triponcito"
-filename = "triponcito-1.20.1-1.0.1.jar"
+filename = "triponcito-1.20.1-1.0.2.jar"
 side = "both"
 
 [download]
-url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/triponcito-1.20.1-1.0.1.jar"
+url = "https://raw.githubusercontent.com/Kaleeethh/pollaland-modpack/main/archivos/mods/triponcito-1.20.1-1.0.2.jar"
 hash-format = "sha256"
-hash = "9808e17cc8a2640b1d319e8f1d993b170ad1c28ffbe6988bb87077f5b7a889f0"
+hash = "a9a485272b56320d45225e30955eb31f5e0dcf477ac4982457223805d28f7dbe"
