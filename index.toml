@@ -1860,6 +1860,10 @@ file = "config/paxi/datapacks/CataclysmCompat1.0.zip"
 hash = "7d369d1414c5dcbd6301bc69bf27039162b2b999acd9cd5bbb2a0c1dd0d49a01"
 
 [[files]]
+file = "config/paxi/datapacks/Creative Frame Recipe.zip"
+hash = "6c1ed39f8e6c32ef14202a0d4849c7260fc287de123fbdb7e15f5c245641cc5b"
+
+[[files]]
 file = "config/paxi/datapacks/Farmers's Delight Cutting Compat 1.2.zip"
 hash = "7cf7555ce02493a0ebe90967cc31f34f09db22e6e444ff231e3d17f6b4a78195"
 
