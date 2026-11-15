@@ -1,12 +1,12 @@
 name = "Pollaland"
 author = "Kaleth"
-version = "1.0.3"
+version = "1.0.4"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "3f74071fc9d608f0a1421e43f1a1bc1ee8e7ef37b8c9aa0e0500def844dcdf49"
+hash = "f5c0511fc86d2e34854d9cfde97302b362faedcf838ece05bba05400c7fbd513"
 
 [versions]
 forge = "47.4.26"
