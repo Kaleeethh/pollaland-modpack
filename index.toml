@@ -4637,6 +4637,11 @@ hash = "6d8d9fbfb670cc4a31323a4f26318728b8f542896456cbb8a8565fca7a6b3957"
 metafile = true
 
 [[files]]
+file = "mods/triponcito.pw.toml"
+hash = "b5074c64f2f44b86a3c1fefd05db6854296712c15a7bbc59f8a4a1e433a19167"
+metafile = true
+
+[[files]]
 file = "mods/twilight-forest-the-lost-blocks.pw.toml"
 hash = "50bdb1b79e8041cde4a379a576f214198bbb43a28453d213c70a330419aefe45"
 metafile = true
