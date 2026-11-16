@@ -1728,7 +1728,7 @@ hash = "e1add6dce3cbd2d1b49536ccc3309e00a09455bd12d85a9dd6717529cdbdfcc7"
 
 [[files]]
 file = "config/mtsconfig.json"
-hash = "b60207d2ca9f9874b7588ad42e53bf6682a81cebe6abaf3bc97ef88feda415a7"
+hash = "3233705cc5eae08a3633a646b14dd5dde1e7a790a72f78718e4b83c625df25cc"
 
 [[files]]
 file = "config/mtsconfigclient.json"
